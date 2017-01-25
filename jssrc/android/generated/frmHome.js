@@ -540,7 +540,25 @@ function addWidgetsfrmHome() {
         "paddingInPixel": false
     }, {});
     flxEnroll.add(btnEnrollDone);
-    frmHome.add(flxHome, flxComment, flxEnroll);
+    var Button0736fee25eaf846 = new kony.ui.Button({
+        "focusSkin": "slButtonGlossRed",
+        "height": "50dp",
+        "id": "Button0736fee25eaf846",
+        "isVisible": true,
+        "left": "247dp",
+        "onClick": AS_Button_13677ee64c7c411e80bbffec309fbc2e,
+        "skin": "slButtonGlossBlue",
+        "text": "Button",
+        "top": "6dp",
+        "width": "67dp",
+        "zIndex": 3
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    frmHome.add(flxHome, flxComment, flxEnroll, Button0736fee25eaf846);
 };
 
 function frmHomeGlobals() {

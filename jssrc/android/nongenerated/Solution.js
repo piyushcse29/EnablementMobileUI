@@ -1,4 +1,3 @@
-//Type your code here
 var sdkClient = null;
 response = null;
 var error;
@@ -126,4 +125,17 @@ function login() {
     }, function(err) {
         alert("Login Failed" + err);
     });
+}
+
+function launchBarcodeCapture() {
+    barcode.captureBarcode(barcodeCapCallback);
+}
+
+function barcodeCapCallback(barcodedata, androidScannedText) {
+    var platformName = kony.os.deviceInfo().name;
+    if (kony.string.startsWith(platformName, "iphone", true)) {
+        frmHome.txtServicetag.text = ("" + barcodedata.barcodestring).toUpperCase();
+    } else if (kony.string.startsWith(platformName, "android", true)) {
+        alert(androidScannedText.toUpperCase());
+    }
 }

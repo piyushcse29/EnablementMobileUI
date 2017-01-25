@@ -1,7 +1,7 @@
 //startup.js file
 var globalhttpheaders = {};
 var appConfig = {
-    appId: "TestTabs",
+    appId: "EnablementGoUI",
     appName: "TestTabs",
     appVersion: "1.0.0",
     platformVersion: null,
@@ -9,11 +9,11 @@ var appConfig = {
     serverPort: "80",
     secureServerPort: "443",
     isDebug: true,
-    middlewareContext: "TestTabs",
+    middlewareContext: "EnablementGoUI",
     isMFApp: false,
     eventTypes: ["FormEntry", "ServiceRequest", "Error", "Crash"],
-    secureurl: "https://10.10.30.100:443/TestTabs/MWServlet",
-    url: "http://10.10.30.100:80/TestTabs/MWServlet"
+    url: null,
+    secureurl: null
 };
 sessionID = "";
 
@@ -53,12 +53,15 @@ function themeCallBack() {
 
 function loadResources() {
     globalhttpheaders = {};
+    kony.os.loadLibrary({
+        "javaclassname": "com.konylabs.ffi.N_barcode"
+    });
     sdkInitConfig = {
         "appConfig": appConfig,
         "isMFApp": appConfig.isMFApp,
         "eventTypes": appConfig.eventTypes,
     }
-    kony.setupsdks(sdkInitConfig, onSuccessSDKCallBack, onSuccessSDKCallBack);
+    kony.theme.setCurrentTheme("default", themeCallBack, themeCallBack);
 };
 
 function onSuccessSDKCallBack() {

@@ -7,6 +7,10 @@ function AS_Button_0aafcaa1058640858486496ac79e9c45(eventobject) {
     close("flxEnroll");
 }
 
+function AS_Button_13677ee64c7c411e80bbffec309fbc2e(eventobject) {
+    return launchBarcodeCapture.call(this);
+}
+
 function AS_Button_24d031c2b1794d8bb662a867d166046f(eventobject) {
     close("flxComment");
 }

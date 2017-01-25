@@ -28,7 +28,8 @@
     "children": [
         "flxHome",
         "flxComment",
-        "flxEnroll"
+        "flxEnroll",
+        "Button0736fee25eaf846"
     ],
     "containerweight": 100,
     "currentLocale": "default",
