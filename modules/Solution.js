@@ -5,15 +5,11 @@ function initializeApp()
 {
   try {
     var key="41d4b94bc7d0b07194152dc6b24267be";
-  	var secret="7fe9ef21224bca50b3fc58541ce74b3b";
-  	var surl="https://100003520.auth.konycloud.com/appconfig";
-  	sdkClient=new kony.sdk();
-  	sdkClient.init(key,secret,surl,function(response){
-    alert("init success");
-      //getData();
-    showeventsf();
-     // showsessionsfunct();
-     // showSessionsfunction();
+    var secret="7fe9ef21224bca50b3fc58541ce74b3b";
+    var surl="https://100003520.auth.konycloud.com/appconfig";
+    sdkClient=new kony.sdk();
+    sdkClient.init(key,secret,surl,function(response){
+      showEvents();
     },function(err){
       alert("client init error "+JSON.stringify(err));
     });
@@ -21,51 +17,49 @@ function initializeApp()
     alert(e);
   }
 }
-  	
 
-function showeventsf()
-  	{
-    var integrationObj = kony.sdk.getCurrentInstance().getIntegrationService("IntServ");
-  	var operationName = "showEvents";
-	var data = {};
-    var headers = {};	
-    integrationObj.invokeOperation(operationName, headers, data, successCallBack1, failureCallBack1);
-    }
+
+function showEvents()
+{
+  var integrationObj = kony.sdk.getCurrentInstance().getIntegrationService("IntServ");
+  var operationName = "showEvents";
+  var data = {};
+  var headers = {};	
+  integrationObj.invokeOperation(operationName, headers, data, successCallBack1, failureCallBack1);
+}
 
 function successCallBack1(res){
-  
-   //alert("success"+JSON.stringify(res));
- // var myObj = JSON.parse(res);	
+
   var obj=[];	
   for(var i=0 ; i<res.result.length;i++)
-      {
-        obj.push({"location":res.result[i].location,"name":res.result[i].name,/*"max_score":res.result[i].max_score,*/"description":res.result[i].description});
-        //obj.push({"name":res.result[i].name});
-      }
+  {
+    obj.push({"location":res.result[i].location,"name":res.result[i].name,/*"max_score":res.result[i].max_score,*/"description":res.result[i].description});
+    //obj.push({"name":res.result[i].name});
+  }
 
   frmHome.tabHome.tabMyEvent.segMyEvents.widgetDataMap = {"lblPlace":"location","lblEventName":"name"};
   frmHome.tabHome.tabMyEvent.segMyEvents.setData(obj);
-  
+
   frmHome.tabHome.tabEvent.segEvents.widgetDataMap = {"lblEventName":"name","lblDescription":"description"};//"lblScore":"max_score"};
   frmHome.tabHome.tabEvent.segEvents.setData(obj);
 
 
 }
 function failureCallBack1(err){
-      var error =res;
+  var error =res;
   //kony.print(JSON.stringify(error));
   alert(error);
 }
-  
+
 function setData(res){
-     var widgetMapping ={};
-     widgetMapping["lblTest"] = "lat";
-     frmHome.segEvents.widgetDataMap =  widgetMapping;
-    // alert("data in seg"+JSON.stringify(frmHome.segEvents.data));
-     alert(res);
-     frmHome.segEvents.addAll(res);
-     
-    }
+  var widgetMapping ={};
+  widgetMapping["lblTest"] = "lat";
+  frmHome.segEvents.widgetDataMap =  widgetMapping;
+  // alert("data in seg"+JSON.stringify(frmHome.segEvents.data));
+  alert(res);
+  frmHome.segEvents.addAll(res);
+
+}
 
 
 // function showsessionsfunct()
@@ -100,7 +94,7 @@ function setData(res){
 // Data1.push(obj);
 // }
 // frmHome.flxHome.tabHome.segEvents.setData(data1); 
-     
+
 //     }
 
 
@@ -131,12 +125,11 @@ function login()
 {
   var oAuthObj = sdkClient.getIdentityService("MSLogin");
   var loginObj = oAuthObj.login({},function(res)
-                               {
-   alert("Login Success"+res);
+                                {
+    alert("Login Success"+res);
     alert("Login Successful");
-   frmHome.show();
-  },function(err)
-                               {
+    frmHome.show();
+  },function(err){
     alert("Login Failed"+err);
   });
 }
@@ -144,16 +137,16 @@ function login()
 
 
 function launchBarcodeCapture(){
-	barcode.captureBarcode(barcodeCapCallback);
+  barcode.captureBarcode(barcodeCapCallback);
 }
 
 function barcodeCapCallback(barcodedata, androidScannedText){
-	var platformName = kony.os.deviceInfo().name;
-	if(kony.string.startsWith(platformName, "iphone", true)){
-		frmHome.txtServicetag.text = (""+barcodedata.barcodestring).toUpperCase();
-	}else if(kony.string.startsWith(platformName, "android", true)){
-		alert(androidScannedText.toUpperCase());
-	}
-	
+  var platformName = kony.os.deviceInfo().name;
+  if(kony.string.startsWith(platformName, "iphone", true)){
+    frmHome.txtServicetag.text = (""+barcodedata.barcodestring).toUpperCase();
+  }else if(kony.string.startsWith(platformName, "android", true)){
+    alert(androidScannedText.toUpperCase());
+  }
+
 }
 
