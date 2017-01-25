@@ -1,0 +1,293 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgComment": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "comment.png"
+            },
+            "imgEnroll": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "enroll.png"
+            },
+            "imgEvent": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "bck.PNG"
+            },
+            "imgLike": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "like.png"
+            },
+            "lblCompleted": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Completed"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "January 16, 2017"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "The event is all about searching an item, the item could be anything of any size depending on the team size. The winner would be highest percentage."
+            },
+            "lblEventName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Scavenger Hunt"
+            },
+            "lblMax": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Max Score"
+            },
+            "lblOngoing": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ongoing"
+            },
+            "lblScore": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "80"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "k"
+            },
+            "lblTest": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblUpcoming": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Upcoming"
+            }
+        },
+        {
+            "imgComment": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "comment.png"
+            },
+            "imgEnroll": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "enroll.png"
+            },
+            "imgEvent": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "bck.PNG"
+            },
+            "imgLike": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "like.png"
+            },
+            "lblCompleted": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Completed"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "January 16, 2017"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "The event is all about searching an item, the item could be anything of any size depending on the team size. The winner would be highest percentage."
+            },
+            "lblEventName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Scavenger Hunt"
+            },
+            "lblMax": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Max Score"
+            },
+            "lblOngoing": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ongoing"
+            },
+            "lblScore": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "80"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "k"
+            },
+            "lblTest": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblUpcoming": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Upcoming"
+            }
+        },
+        {
+            "imgComment": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "comment.png"
+            },
+            "imgEnroll": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "enroll.png"
+            },
+            "imgEvent": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "bck.PNG"
+            },
+            "imgLike": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "like.png"
+            },
+            "lblCompleted": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Completed"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "January 16, 2017"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "The event is all about searching an item, the item could be anything of any size depending on the team size. The winner would be highest percentage."
+            },
+            "lblEventName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Scavenger Hunt"
+            },
+            "lblMax": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Max Score"
+            },
+            "lblOngoing": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ongoing"
+            },
+            "lblScore": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "80"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "k"
+            },
+            "lblTest": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblUpcoming": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Upcoming"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segEvents",
+    "ide_onRowClick": "AS_Segment_d5fd7f01444645e7b56043acaa21d9f5",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "d3017bea7cdf4f1893b4353a3a216ff7",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "tabEvent",
+    "pf": "frmHome",
+    "retainselection": false,
+    "rowTemplateId": "e6f7662f62f6468ca43c8742d187df8a",
+    "rowcounter": 2,
+    "rowfocusskin": "sb363cb48fd64acab480a2d6cb7d446c",
+    "rowskin": "s513bb3c64af4f9aa9bd6b494dd11c4a",
+    "rowtemplate": "flxEv",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sbf9de645a884e69803ed2739ee8a61b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "tabpaneId": "tabHome",
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "FlexContainer0a592a32577c646": "FlexContainer0a592a32577c646",
+        "flxComment": "flxComment",
+        "flxDesc": "flxDesc",
+        "flxEnroll": "flxEnroll",
+        "flxEv": "flxEv",
+        "flxFooter": "flxFooter",
+        "flxHeader": "flxHeader",
+        "flxImg": "flxImg",
+        "flxLike": "flxLike",
+        "flxMain": "flxMain",
+        "imgComment": "imgComment",
+        "imgEnroll": "imgEnroll",
+        "imgEvent": "imgEvent",
+        "imgLike": "imgLike",
+        "lblCompleted": "lblCompleted",
+        "lblDate": "lblDate",
+        "lblDescription": "lblDescription",
+        "lblEventName": "lblEventName",
+        "lblMax": "lblMax",
+        "lblOngoing": "lblOngoing",
+        "lblScore": "lblScore",
+        "lblSeparator": "lblSeparator",
+        "lblTest": "lblTest",
+        "lblUpcoming": "lblUpcoming"
+    },
+    "zindex": 1
+}

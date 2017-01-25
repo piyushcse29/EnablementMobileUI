@@ -1,0 +1,27 @@
+{
+    "AS_FlexContainer_8c6fe5a62b274d24b5315149600bd85b": {
+        "id": "AS_FlexContainer_8c6fe5a62b274d24b5315149600bd85b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "eventSeg",
+            "type": "templates",
+            "platform": "",
+            "KUID": "9d0eef3f46934d6fa9a233b99c10fcf3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__288b83694ea343c98c41bc6d59c8e25c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "open(\"flxEnroll\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

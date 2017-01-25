@@ -1,0 +1,19 @@
+{
+  "background_color": "ffffffb5",
+  "bg_type": "one",
+  "border_color": "414141ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "font_color": "414141ff",
+  "font_name": "Arial",
+  "font_size": 129,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "iphone": {
+    "font_name": "TrebuchetMS-Bold"
+  },
+  "isDefaultSkin": false,
+  "kuid": "se60d7e981434b54a7f62f27e9e49669",
+  "wType": "TabPane"
+}

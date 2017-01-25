@@ -1,0 +1,24 @@
+{
+    "AS_Button_961fcb8f12a7456abaa85b2a4035a5b1": {
+        "id": "AS_Button_961fcb8f12a7456abaa85b2a4035a5b1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0fa8fdfd25844c4082011f1911a46f02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__47d8bf58dfed46fe9d7d91e3ee77f83a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "close(\"flxComment\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

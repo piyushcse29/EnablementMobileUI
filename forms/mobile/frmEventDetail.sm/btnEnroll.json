@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0.00%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sdf373548b2c487faa0fd8f53b1d09f8",
+    "_text_": "Enroll",
+    "_top_": {
+        "type": "string",
+        "value": "105%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sb3ee9c871a445fc9e5d1bb6f67fb2b5",
+    "id": "btnEnroll",
+    "info": null,
+    "isvisible": true,
+    "kuid": "39c2e93f7ae945a68ce0757755d726aa",
+    "name": "kony.ui.Button",
+    "parent": "flxMain",
+    "pf": "frmEventDetail",
+    "wType": "Button",
+    "zindex": 1
+}

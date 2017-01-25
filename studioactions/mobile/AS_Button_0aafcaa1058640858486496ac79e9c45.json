@@ -1,0 +1,17 @@
+{
+    "AS_Button_0aafcaa1058640858486496ac79e9c45": {
+        "id": "AS_Button_0aafcaa1058640858486496ac79e9c45",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_dafea4655a324d6b9dbbae5fc1cceaf1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "close(\"flxEnroll\");",
+            "callbackType": null
+        }]
+    }
+}

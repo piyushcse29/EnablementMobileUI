@@ -1,0 +1,27 @@
+{
+    "AS_FlexContainer_e17eae680e9d4cefae1b6e30806551b9": {
+        "id": "AS_FlexContainer_e17eae680e9d4cefae1b6e30806551b9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "eventSeg",
+            "type": "templates",
+            "platform": "",
+            "KUID": "9d0eef3f46934d6fa9a233b99c10fcf3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__935cdc7f079c4539b43e926a021bc542",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "open(\"flxComment\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

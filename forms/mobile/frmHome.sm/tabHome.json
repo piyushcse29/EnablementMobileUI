@@ -1,0 +1,132 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizTabPane",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_activeTabsBackUp": [
+        0
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-0.03%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_top_": {
+        "type": "string",
+        "value": "9.98%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "activeskin": "s592d675cdc84cf8a213b3e437577aee",
+    "activetab": 0,
+    "activetabs": [
+        0
+    ],
+    "allboxes": [],
+    "android": {
+        "psp": {
+            "tabHeaderHeight": 64
+        },
+        "viewType": "tabview"
+    },
+    "canUpdateUI": true,
+    "children": [
+        "tabMyEvent",
+        "tabEvent",
+        "tabLeadership"
+    ],
+    "collapsedimage": "",
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "frmHome",
+        "platform": "android",
+        "tabpaneID": "",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "disabledSkins": {},
+    "expandedimage": "",
+    "id": "tabHome",
+    "imageposition": "right",
+    "inactiveskin": "sacf0745f8b44845ab079d29b10f49d0",
+    "info": null,
+    "isvisible": true,
+    "kuid": "a9f573bcf5984fb0873345aa923f4a9d",
+    "layouttype": 0,
+    "margininpixel": false,
+    "maxheight": {
+        "type": "string",
+        "value": "100px"
+    },
+    "name": "kony.ui.TabPane",
+    "paddinginpixel": false,
+    "parent": "flxHome",
+    "pf": "frmHome",
+    "screenlevelwidget": false,
+    "tabHeaderHeight": 64,
+    "tabnamealignment": "left",
+    "toggletabs": false,
+    "viewconfig": {
+        "collapsibleViewConfig": {
+            "collapsedImage": "",
+            "collapsedimage": "",
+            "expandedImage": "",
+            "expandedimage": "",
+            "imagePosition": "right",
+            "imageposition": "right",
+            "tabNameAlignment": "left",
+            "tabnamealignment": "left",
+            "toggleTabs": false,
+            "toggletabs": false
+        },
+        "collapsibleviewconfig": {
+            "collapsedImage": "",
+            "collapsedimage": "",
+            "expandedImage": "",
+            "expandedimage": "",
+            "imagePosition": "right",
+            "imageposition": "right",
+            "tabNameAlignment": "left",
+            "tabnamealignment": "left",
+            "toggleTabs": false,
+            "toggletabs": false
+        },
+        "pageViewConfig": {
+            "needPageIndicator": true,
+            "pageOffDotImage": "",
+            "pageOnDotImage": ""
+        },
+        "panoramaViewConfig": {
+            "panoramaImage": "",
+            "panoramaTitle": "",
+            "panoramaTitleImage": ""
+        },
+        "tabViewConfig": {
+            "headerPosition": "top",
+            "image1": "tableftarrow.png",
+            "image2": "tabrightarrow.png"
+        }
+    },
+    "viewtype": "tabview",
+    "wType": "TabPane",
+    "zindex": 1
+}

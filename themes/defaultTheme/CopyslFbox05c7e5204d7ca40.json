@@ -1,0 +1,11 @@
+{
+  "background_image": "eventhomebck.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sdcfa9298f084c18a8113a5b995830a9",
+  "wType": "FlexContainer"
+}

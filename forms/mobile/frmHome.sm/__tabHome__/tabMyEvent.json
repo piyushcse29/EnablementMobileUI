@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizTab",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s4b0078c39e1487f87566f4a0cfe7427",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "segMyEvents"
+    ],
+    "clipbounds": true,
+    "containerweight": 93,
+    "enablescrolling": true,
+    "id": "tabMyEvent",
+    "info": null,
+    "invokedProperty": "image",
+    "isvisible": true,
+    "kuid": "0bab3021e7dd426ea2dc3bcdbcb037da",
+    "layouttype": 2,
+    "margininpixel": false,
+    "name": "kony.ui.Tab",
+    "oninit": null,
+    "paddinginpixel": false,
+    "parent": "tabHome",
+    "pf": "frmHome",
+    "scrolldirection": 1,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "tabname": "My Event",
+    "tabpaneId": "tabHome",
+    "wType": "Tab"
+}

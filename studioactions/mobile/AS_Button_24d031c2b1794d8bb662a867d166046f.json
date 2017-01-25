@@ -1,0 +1,17 @@
+{
+    "AS_Button_24d031c2b1794d8bb662a867d166046f": {
+        "id": "AS_Button_24d031c2b1794d8bb662a867d166046f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_89e1da67ce434dc083c2ac01b41a32a0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "close(\"flxComment\");\n",
+            "callbackType": null
+        }]
+    }
+}
