@@ -8,11 +8,14 @@
         }],
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__7fcd1dc75adc4edeb0486432b0cb200c",
-            "type": "ADD_SNIPPET",
-            "codeSnippet": "initializeApp();",
+            "id": "INVOKE_FUNCTION___4fc4544fe38041e1a3b0dba9c2f17556",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "initializeApp",
+            "display": "initializeApp",
+            "inputparams": [],
             "parentId": null,
-            "callbackType": null
+            "callbackType": null,
+            "disabled": null
         }]
     }
 }

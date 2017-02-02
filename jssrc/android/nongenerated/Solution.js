@@ -2,27 +2,7 @@ var sdkClient = null;
 response = null;
 var error;
 
-function initializeApp() {
-    try {
-        var key = "41d4b94bc7d0b07194152dc6b24267be";
-        var secret = "7fe9ef21224bca50b3fc58541ce74b3b";
-        var surl = "https://100003520.auth.konycloud.com/appconfig";
-        sdkClient = new kony.sdk();
-        sdkClient.init(key, secret, surl, function(response) {
-            alert("init success");
-            //getData();
-            showeventsf();
-            // showsessionsfunct();
-            // showSessionsfunction();
-        }, function(err) {
-            alert("client init error " + JSON.stringify(err));
-        });
-    } catch (e) {
-        alert(e);
-    }
-}
-
-function showeventsf() {
+function showEvents() {
     var integrationObj = kony.sdk.getCurrentInstance().getIntegrationService("IntServ");
     var operationName = "showEvents";
     var data = {};
@@ -31,8 +11,6 @@ function showeventsf() {
 }
 
 function successCallBack1(res) {
-    //alert("success"+JSON.stringify(res));
-    // var myObj = JSON.parse(res);	
     var obj = [];
     for (var i = 0; i < res.result.length; i++) {
         obj.push({
@@ -68,59 +46,12 @@ function setData(res) {
     alert(res);
     frmHome.segEvents.addAll(res);
 }
-// function showsessionsfunct()
-//   	{
-//     var integrationObj = kony.sdk.getCurrentInstance().getIntegrationService("IntServ");
-//   	var operationName = "showSessions1";
-// 	var data = {};
-//     var headers = {};	
-//     integrationObj.invokeOperation(operationName, headers, data, successCallBack2, failureCallBack2);
-//     }
-// function successCallBack2(res){
-//   alert("in success");
-//    // alert("success"+JSON.stringify((res["result"][0]).coord));
-//     response=res.result[0].sessions[0].session_name;
-//     alert(res.result[0].sessions.length); 
-//   setData(res);
-// }
-// function failureCallBack2(err){
-//       var error =res;
-//   //kony.print(JSON.stringify(error));
-//   alert(error);
-// }
-// function setData(res){
-//      var data1=[];
-// for(var i=0;i<res.result[0].sessions.length;i++){
-// var obj={
-// “lblEventName”:(res.result[0].sessions[i]).session_name,
-// }
-// Data1.push(obj);
-// }
-// frmHome.flxHome.tabHome.segEvents.setData(data1); 
-//     }
-// function showSessionsfunction()
-//   	{
-//     var integrationObj = sdkClient.getIntegrationService("IntServ");
-//   	var operationName = "showSession2";
-// 	var data = {};
-//     var headers = {};	
-//     integrationObj.invokeOperation(operationName, headers, data, successCallBack3, failureCallBack3);
-//     }
-// function successCallBack3(res){
-//     alert("success"+JSON.stringify((res["result"][0]).coord));
-//     response=(res["result"][0]).coord.lon;
-//     alert(res.coord.lon); 
-// }
-// function failureCallBack3(err){
-//       var error =res;
-//   //kony.print(JSON.stringify(error));
-//   alert(error);
-// }
+
 function login() {
     var oAuthObj = sdkClient.getIdentityService("MSLogin");
     var loginObj = oAuthObj.login({}, function(res) {
-        alert("Login Success" + res);
-        alert("Login Successful");
+        kony.print("Identity" + JSON.stringify(res));
+        regForPush();
         frmHome.show();
     }, function(err) {
         alert("Login Failed" + err);

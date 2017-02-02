@@ -1,6 +1,6 @@
 //actions.js file 
 function AS_AppEvents_457245f58d09465a86a236a5bed832b6(eventobject) {
-    initializeApp();
+    return initializeApp.call(this);
 }
 
 function AS_Button_0aafcaa1058640858486496ac79e9c45(eventobject) {
