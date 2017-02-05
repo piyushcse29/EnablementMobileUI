@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_activeTabsBackUp": [
-        1
+        0
     ],
     "_height_": {
         "type": "string",
@@ -28,7 +28,7 @@
         "value": "100%"
     },
     "activeskin": "s3b4540d9a944736bfbdb793f6713179",
-    "activetab": 1,
+    "activetab": 0,
     "activetabs": [
         0
     ],
@@ -42,7 +42,7 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50.09%"
+        "value": "50.12%"
     },
     "centery": {
         "type": "string",

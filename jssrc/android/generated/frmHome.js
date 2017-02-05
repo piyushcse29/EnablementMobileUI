@@ -246,6 +246,7 @@ function addWidgetsfrmHome() {
         "height": "100%",
         "id": "BtnLogout",
         "isVisible": true,
+        "onClick": AS_Button_6d19984d331e46cf8d8e8a283e2f6445,
         "skin": "CopyslButtonGlossBlue0f280a71a262d4b",
         "width": "100%",
         "zIndex": 1
@@ -334,7 +335,7 @@ function addWidgetsfrmHome() {
     var tabHome = new kony.ui.TabPane({
         "activeSkin": "customNewActive",
         "activeTabs": [0],
-        "centerX": "50.09%",
+        "centerX": "50.12%",
         "centerY": "52.98%",
         "height": "94%",
         "id": "tabHome",
@@ -384,6 +385,7 @@ function addWidgetsfrmHome() {
         "id": "tabMyEvent",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
+        "onTouchStart": AS_Tab_efc43ca2af1f42019d7fa618661da560,
         "orientation": constants.BOX_LAYOUT_VERTICAL,
         "skin": "CopyslTab02ac065d26d144e",
         "tabName": "My Event",

@@ -2,7 +2,7 @@ var sdkClient=null;
 response=null;
 var event=[], session=[];	
 var error;
-var userId, eventId;
+var eventId;
 
 function showeventsf()
 {
@@ -44,7 +44,7 @@ function enroll()
   var operationName = "enroll";
   var data = {
     "eventid":eventId,// the variable you will store the event name in
-    "userid":userId,// the variable you will store the id in
+    "userid":email,// the variable you will store the id in
   };
   var headers = {};           
   integrationObj.invokeOperation(operationName, headers, data, successCallBack2, failureCallBack2);
@@ -96,10 +96,12 @@ function login()
         username=profile.firstname+" "+profile.lastname;
         kony.store.setItem("email", email);
         kony.store.setItem("username", username);
+        regForPush();
       }, function(error) {
         kony.application.dismissLoadingScreen();
         alert("Error occured while fetching the profile.");
       });
+      frmHome.flxHome.tabHome.lblName.text=username;
       frmHome.show();
     },function(err){
       alert("Login Failed"+err);
@@ -121,3 +123,20 @@ function barcodeCapCallback(barcodedata, androidScannedText){
 
 }
 
+function logout(){
+  kony.application.showLoadingScreen();
+  var client = kony.sdk.getCurrentInstance();
+  var oAuthObj = client.getIdentityService("MSLogin");
+  oAuthObj.logout( 
+    function(response) {
+      kony.store.setItem("email", "");
+      kony.store.setItem("username", "");
+      kony.print("Logout success" + JSON.stringify(response));
+      frmLogin.show();
+      kony.application.dismissLoadingScreen();
+    }, function(error) {
+      kony.application.dismissLoadingScreen();
+      kony.print("Logout failure" + JSON.stringify(error));
+    }
+  );
+}

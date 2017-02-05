@@ -68,7 +68,8 @@ function regSuccessAndroidCallback(regId) {
 function msgServRegisterSuccessCallback(result) {
     kony.print('$# in msgServRegisterSuccessCallback');
     glob_ks_id = result.id;
-    kony.store.setItem("glob_ks_id", glob_ks_id);
+    kony.store.setItem("glob_ks_id ", glob_ks_id);
+    kony.print("glob_ks_id" + glob_ks_id);
     //    frmCreateAccount.show();
     //alert("ks id:"+glob_ks_id);
     kony.print("Success invoking register method of the messaging service" + JSON.stringify(result));

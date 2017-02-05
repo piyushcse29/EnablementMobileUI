@@ -35,6 +35,7 @@
     "defaultunit": 2,
     "enablescrolling": true,
     "id": "tabMyEvent",
+    "ide_onTouchStart": "AS_Tab_efc43ca2af1f42019d7fa618661da560",
     "info": null,
     "invokedProperty": "image",
     "isvisible": true,

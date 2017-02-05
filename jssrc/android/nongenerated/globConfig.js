@@ -14,7 +14,7 @@ function initializeApp() {
         var surl = "https://100003520.auth.konycloud.com/appconfig";
         sdkClient = new kony.sdk();
         sdkClient.init(key, secret, surl, function(response) {
-            login();
+            //  login();
             showeventsf();
         }, function(err) {
             alert("client init error " + JSON.stringify(err));

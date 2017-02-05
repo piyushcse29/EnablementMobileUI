@@ -3,7 +3,7 @@ response = null;
 var event = [],
     session = [];
 var error;
-var userId, eventId;
+var eventId;
 
 function showeventsf() {
     var integrationObj = kony.sdk.getCurrentInstance().getIntegrationService("IntServ");
@@ -56,7 +56,7 @@ function enroll() {
     var operationName = "enroll";
     var data = {
         "eventid": eventId, // the variable you will store the event name in
-        "userid": userId, // the variable you will store the id in
+        "userid": email, // the variable you will store the id in
     };
     var headers = {};
     integrationObj.invokeOperation(operationName, headers, data, successCallBack2, failureCallBack2);
@@ -93,23 +93,28 @@ function eventDetail() {
 }
 
 function login() {
-    var client = kony.sdk.getCurrentInstance();
-    var oAuthObj = client.getIdentityService("MSLogin");
-    var loginObj = oAuthObj.login({}, function(res) {
-        var profile = oAuthObj.getProfile(false, function(profile) {
-            email = profile.email;
-            username = profile.firstname + " " + profile.lastname;
-            kony.print("myString " + email + username);
-        }, function(error) {
-            kony.application.dismissLoadingScreen();
-            alert("Error occured while fetching the profile.");
-        });
-        //kony.print("myString "+profile);
-        alert("Login Successful");
+    if (kony.store.getItem("email") !== null) {
         frmHome.show();
-    }, function(err) {
-        alert("Login Failed" + err);
-    });
+    } else {
+        var client = kony.sdk.getCurrentInstance();
+        var oAuthObj = client.getIdentityService("MSLogin");
+        var loginObj = oAuthObj.login({}, function(res) {
+            var profile = oAuthObj.getProfile(false, function(profile) {
+                email = profile.email;
+                username = profile.firstname + " " + profile.lastname;
+                kony.store.setItem("email", email);
+                kony.store.setItem("username", username);
+                regForPush();
+            }, function(error) {
+                kony.application.dismissLoadingScreen();
+                alert("Error occured while fetching the profile.");
+            });
+            frmHome.flxHome.tabHome.lblName.text = username;
+            frmHome.show();
+        }, function(err) {
+            alert("Login Failed" + err);
+        });
+    }
 }
 
 function launchBarcodeCapture() {
@@ -123,4 +128,17 @@ function barcodeCapCallback(barcodedata, androidScannedText) {
     } else if (kony.string.startsWith(platformName, "android", true)) {
         alert(androidScannedText.toUpperCase());
     }
+}
+
+function logout() {
+    var client = kony.sdk.getCurrentInstance();
+    var oAuthObj = client.getIdentityService("MSLogin");
+    oAuthObj.logout(function(response) {
+        kony.store.setItem("email", null);
+        kony.store.setItem("username", null);
+        kony.print("Logout success" + JSON.stringify(response));
+        frmLogin.show();
+    }, function(error) {
+        kony.print("Logout failure" + JSON.stringify(error));
+    });
 }

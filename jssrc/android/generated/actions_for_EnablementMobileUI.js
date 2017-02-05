@@ -19,6 +19,10 @@ function AS_Button_49fbb61f80224be8b9cb49610fd529cf(eventobject) {
     close("flxEnroll");
 }
 
+function AS_Button_6d19984d331e46cf8d8e8a283e2f6445(eventobject) {
+    return logout.call(this);
+}
+
 function AS_Button_961fcb8f12a7456abaa85b2a4035a5b1(eventobject) {
     close("flxComment");
 }
@@ -87,3 +91,5 @@ function AS_Segment_d5fd7f01444645e7b56043acaa21d9f5(eventobject, sectionNumber,
     frmEventDetail.show();
     eventDetail();
 }
+
+function AS_Tab_efc43ca2af1f42019d7fa618661da560(eventobject, x, y) {}
