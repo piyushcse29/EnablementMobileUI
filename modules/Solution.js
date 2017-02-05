@@ -84,24 +84,26 @@ function eventDetail()
 
 function login()
 {
-  var client = kony.sdk.getCurrentInstance();
-  var oAuthObj = client.getIdentityService("MSLogin");
-  var loginObj = oAuthObj.login({},function(res){
-  	var profile=oAuthObj.getProfile(false, function(profile) {
-      email=profile.email;
-      username=profile.firstname+" "+profile.lastname;
-      kony.print("myString "+email + username);
-  
-      }, function(error) {
-      kony.application.dismissLoadingScreen();
-        alert("Error occured while fetching the profile.");
-    });
-    //kony.print("myString "+profile);
-    alert("Login Successful");
+  if(kony.store.getItem("email")!==null){
     frmHome.show();
-  },function(err){
-    alert("Login Failed"+err);
-  });
+  }
+  else{
+    var client = kony.sdk.getCurrentInstance();
+    var oAuthObj = client.getIdentityService("MSLogin");
+    var loginObj = oAuthObj.login({},function(res){
+      var profile=oAuthObj.getProfile(false, function(profile) {
+        email=profile.email;
+        username=profile.firstname+" "+profile.lastname;
+        kony.store.setItem("email", email);
+        kony.store.setItem("username", username);
+      }, function(error) {
+        kony.application.dismissLoadingScreen();
+        alert("Error occured while fetching the profile.");
+      });
+      frmHome.show();
+    },function(err){
+      alert("Login Failed"+err);
+    });}
 }
 
 
