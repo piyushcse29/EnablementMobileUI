@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "94%"
+        "value": "90%"
     },
     "_left_": {
         "type": "string",
@@ -26,20 +26,25 @@
     "_skin_": "s4031adfcc61446a93c745fbed8a0def",
     "_top_": {
         "type": "string",
-        "value": "3%"
+        "value": "8%"
     },
     "_width_": {
         "type": "string",
-        "value": "94%"
+        "value": "90%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "flxHeader",
+        "flxImg",
+        "flxBottom",
         "flxDesc",
         "flxFooter",
-        "flxImg",
         "FlexContainer0a592a32577c646"
     ],
     "clipbounds": true,
@@ -50,7 +55,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "27abdd3c776741a99110ab82795aeb5a",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxEv",
     "pf": "segEvents",

@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "19%"
+        "value": "2.50%"
     },
     "_margin_": [
         1,
@@ -23,10 +23,10 @@
         0
     ],
     "_skin_": "s4f34c9e72da47a09aa306a53ef3dbf5",
-    "_text_": "10 AM - 01 PM",
+    "_text_": "10AM - 3PM",
     "_top_": {
         "type": "string",
-        "value": "25%"
+        "value": "6.50%"
     },
     "_width_": {
         "type": "ref",
@@ -58,7 +58,7 @@
     "isvisible": true,
     "kuid": "004cea62d46f4038be67fecfbaf2f3ac",
     "name": "kony.ui.Label",
-    "parent": "FlexContainer03fddf65ed89949",
+    "parent": "TimeCont",
     "pf": "MyEventSegNew",
     "tooltip": "",
     "wType": "Label",

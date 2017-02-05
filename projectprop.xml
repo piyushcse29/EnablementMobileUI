@@ -52,7 +52,7 @@
     <attributes name="Text_Messaging" value="true"/>
     <attributes name="win8bgagentnamespace" value=""/>
     <attributes name="apmgestureswipe" value="false"/>
-    <attributes name="appnamekey" value="EnablementGo"/>
+    <attributes name="appnamekey" value="TestTabs"/>
     <attributes name="currentgaversion" value="7.2.1.QA_v201612071650_r6"/>
     <attributes name="wp10sharedUserCertificates" value="false"/>
     <attributes name="winphone_allowselfsignedcertificate" value="None"/>
@@ -283,8 +283,8 @@
     <attributes name="wp8packagepublisherkey" value="Kony"/>
     <attributes name="WP8_ID_CAP_PHONEDIALER" value="true"/>
     <attributes name="bb10urlscheme" value=""/>
-    <attributes name="apppackagekey" value="com.orgname.TestTabs"/>
-    <attributes name="andtargetsdkkey" value="5.1.1"/>
+    <attributes name="apppackagekey" value="com.kony.Enablement"/>
+    <attributes name="andtargetsdkkey" value="5.1"/>
     <attributes name="win8bgagentclassname" value=""/>
     <attributes name="wp81sdescriptionkey" value="Sample Test Application"/>
     <attributes name="appversionkey" value="1.0.0"/>
@@ -518,7 +518,7 @@
     <attributes name="musicLibrary" value="false"/>
     <attributes name="READ_LOGS" value="false"/>
     <attributes name="wp8flipmediumkey" value=""/>
-    <attributes name="appidkey" value="EnablementGo"/>
+    <attributes name="appidkey" value="EnablementGoUI"/>
     <attributes name="iospopuptransitioncorrection" value="true"/>
     <attributes name="androidloadindicatorkey" value="true"/>
     <attributes name="CONTROL_LOCATION_UPDATES" value="false"/>

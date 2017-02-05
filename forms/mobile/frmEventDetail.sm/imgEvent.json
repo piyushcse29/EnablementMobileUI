@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "84%"
     },
     "_left_": {
         "type": "string",
@@ -24,7 +24,7 @@
         0
     ],
     "_skin_": "s458ddeb64e14873a3f4b1eb2d6201b7",
-    "_src_": "bck.PNG",
+    "_src_": "carousel4.png",
     "_top_": {
         "type": "string",
         "value": "0%"
@@ -34,10 +34,14 @@
         "value": "100%"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "formID": "frmEventDetail",
+        "formID": "frmEventDetails",
         "platform": "android",
         "templateType": "forms",
         "topLevelBox": null

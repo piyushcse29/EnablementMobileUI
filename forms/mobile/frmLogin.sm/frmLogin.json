@@ -26,7 +26,8 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxImgBack"
+        "flxImgBack",
+        "flxOutlook"
     ],
     "containerweight": 100,
     "currentLocale": "default",

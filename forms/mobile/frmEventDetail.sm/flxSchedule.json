@@ -26,7 +26,7 @@
     "_skin_": "s567480f638549edac10c49013987fcf",
     "_top_": {
         "type": "string",
-        "value": "70%"
+        "value": "55%"
     },
     "_width_": {
         "type": "string",
@@ -38,7 +38,8 @@
     "bounces": true,
     "canUpdateUI": true,
     "children": [
-        "lblSchedule"
+        "lblSchedule",
+        "ScheduleSeg"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -53,7 +54,7 @@
     "layouttype": 2,
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,
-    "parent": "flxMain",
+    "parent": "DescriptionCont",
     "pf": "frmEventDetail",
     "scrolldirection": 2,
     "snapgridsize": 10,

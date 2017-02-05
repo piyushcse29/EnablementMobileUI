@@ -36,7 +36,6 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblUpcoming",
         "lblOngoing",
         "lblCompleted",
         "lblSeparator"
@@ -47,7 +46,7 @@
     "enablescrolling": true,
     "id": "FlexContainer0a592a32577c646",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "4a96e11858ba4c32bbdb4cc71c9df965",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

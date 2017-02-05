@@ -46,7 +46,7 @@
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "2efdf6a9f4ef493ca677c0ba12a74f85",
     "name": "kony.ui.Image2",
     "parent": "flxEnroll",

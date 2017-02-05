@@ -36,7 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "imgBack"
+        "imgBack",
+        "flxLogo"
     ],
     "clipbounds": true,
     "containerweight": 100,

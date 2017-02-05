@@ -1,0 +1,20 @@
+{
+    "AS_FlexContainer_e717ee30f36845649141646bfeb68137": {
+        "id": "AS_FlexContainer_e717ee30f36845649141646bfeb68137",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_98af7b1a607d42a6b0c3e6d74e88563a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "open(\"flxComment\");",
+            "callbackType": null
+        }]
+    }
+}

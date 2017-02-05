@@ -1,5 +1,4 @@
 //Type your code here
-//  positiveSelection();
 function regForPush() {
     setReqCallBacks();
     registerWithReqService();
@@ -144,7 +143,7 @@ function positiveSelection() {
     var basicConf = {
         message: "Notifications may include alerts,\nsounds and icon badges.These can\nbe configured in settings.",
         alertType: constants.ALERT_TYPE_CONFIRMATION,
-        alertTitle: '"EnablemetGo" Would Like to Send You\nPush Notifications',
+        alertTitle: '"EnablementGo" Would Like to Send You\nPush Notifications',
         yesLabel: "OK",
         noLabel: "Don't Allow",
         "alertIcon": "conf.png",

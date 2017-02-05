@@ -1,15 +1,15 @@
 //startup.js file
 var globalhttpheaders = {};
 var appConfig = {
-    appId: "EnablementGo",
-    appName: "EnablementGo",
+    appId: "EnablementGoUI",
+    appName: "TestTabs",
     appVersion: "1.0.0",
     platformVersion: null,
     serverIp: "10.10.30.100",
     serverPort: "80",
     secureServerPort: "443",
     isDebug: true,
-    middlewareContext: "EnablementGo",
+    middlewareContext: "EnablementGoUI",
     isturlbase: "https://mobilefabric-demo.konycloud.com/services",
     isMFApp: true,
     appKey: "6169c8047c0f328ffb432b748c97d5c",
@@ -59,20 +59,22 @@ var appConfig = {
     svcDocRefresh: false,
     svcDocRefreshTimeSecs: -1,
     eventTypes: ["FormEntry", "ServiceRequest", "Error", "Crash"],
-    url: "https://mobilefabric-demo.konycloud.com/EnablementGo/MWServlet",
-    secureurl: "https://mobilefabric-demo.konycloud.com/EnablementGo/MWServlet"
+    url: "https://mobilefabric-demo.konycloud.com/EnablementGoUI/MWServlet",
+    secureurl: "https://mobilefabric-demo.konycloud.com/EnablementGoUI/MWServlet"
 };
 sessionID = "";
 
 function appInit(params) {
     skinsInit();
-    initializeeventSeg();
     initializeMyEventSegNew();
     initializenewSegLeadBoard();
     initializesegEvents();
+    initializetempEventDetails();
+    initializetempMyEvent();
     frmEventDetailGlobals();
     frmHomeGlobals();
     frmLoginGlobals();
+    frmMyEventDetailedGlobals();
     setAppBehaviors();
 };
 

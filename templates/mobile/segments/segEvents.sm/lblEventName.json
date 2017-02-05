@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "3%"
     },
     "_margin_": [
         1,
@@ -23,14 +23,10 @@
         0
     ],
     "_skin_": "sad97a624e7d440b882cd6b7ad03904e",
-    "_text_": "Scavenger Hunt",
-    "_top_": {
-        "type": "string",
-        "value": "5%"
-    },
+    "_text_": "Kony Visualizer 8.2",
     "_width_": {
         "type": "string",
-        "value": "70%"
+        "value": "60%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,6 +36,10 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,

@@ -1,0 +1,20 @@
+{
+    "AS_FlexContainer_dc72f6949f0a431a94932ec13c98bdf1": {
+        "id": "AS_FlexContainer_dc72f6949f0a431a94932ec13c98bdf1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_6dd08a8188cc4f6887ff067c3de9ff41",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "open(\"flxEnroll\");\neventID();",
+            "callbackType": null
+        }]
+    }
+}

@@ -16,14 +16,14 @@ function addWidgetsfrmHome() {
     flxHome.setDefaultUnit(kony.flex.DP);
     var flxHeader = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "3%",
         "clipBounds": true,
-        "height": "10%",
+        "height": "6%",
         "id": "flxHeader",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
-        "left": "0%",
         "skin": "CopyslFbox05d1e1dad82814c",
-        "top": "0%",
         "width": "100%",
         "zIndex": 1
     }, {}, {});
@@ -34,7 +34,7 @@ function addWidgetsfrmHome() {
         "clipBounds": true,
         "height": "85%",
         "id": "flxsrch",
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "86%",
         "onClick": AS_FlexContainer_65dea0c939a348b685ca7229ddac24f6,
@@ -65,7 +65,7 @@ function addWidgetsfrmHome() {
     var imgLogo = new kony.ui.Image2({
         "height": "100%",
         "id": "imgLogo",
-        "isVisible": true,
+        "isVisible": false,
         "left": "0%",
         "skin": "slImage",
         "src": "appname.png",
@@ -77,7 +77,186 @@ function addWidgetsfrmHome() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    flxHeader.add(flxsrch, imgLogo);
+    var lblTitle1 = new kony.ui.Label({
+        "id": "lblTitle1",
+        "isVisible": true,
+        "left": "33.40%",
+        "skin": "CopyslLabel0e1f2343ad3284b",
+        "text": "Enablement",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "top": "22.50%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var lblTitle2 = new kony.ui.Label({
+        "id": "lblTitle2",
+        "isVisible": true,
+        "left": "59.20%",
+        "skin": "CopyslLabel03da67889c87c44",
+        "text": "GO",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "top": "22.50%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var SearchCont = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "17dp",
+        "id": "SearchCont",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "73.30%",
+        "skin": "slFbox",
+        "top": "32.20%",
+        "width": "17dp",
+        "zIndex": 1
+    }, {}, {});
+    SearchCont.setDefaultUnit(kony.flex.DP);
+    var SearchImg = new kony.ui.Image2({
+        "centerX": "50%",
+        "centerY": "50%",
+        "height": "100%",
+        "id": "SearchImg",
+        "isVisible": true,
+        "skin": "slImage",
+        "src": "search_icon.png",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var BtnSearch = new kony.ui.Button({
+        "centerX": "50%",
+        "centerY": "50%",
+        "focusSkin": "slButtonGlossRed",
+        "height": "100%",
+        "id": "BtnSearch",
+        "isVisible": true,
+        "skin": "CopyslButtonGlossBlue0f280a71a262d4b",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    SearchCont.add(SearchImg, BtnSearch);
+    var ScanCont = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "18dp",
+        "id": "ScanCont",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "81.9%",
+        "skin": "slFbox",
+        "top": "31.70%",
+        "width": "19dp",
+        "zIndex": 1
+    }, {}, {});
+    ScanCont.setDefaultUnit(kony.flex.DP);
+    var ScanImg = new kony.ui.Image2({
+        "centerX": "50%",
+        "centerY": "50%",
+        "height": "100%",
+        "id": "ScanImg",
+        "isVisible": true,
+        "skin": "slImage",
+        "src": "scan_icn.png",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var BtnScan = new kony.ui.Button({
+        "centerX": "50%",
+        "centerY": "50%",
+        "focusSkin": "slButtonGlossRed",
+        "height": "100%",
+        "id": "BtnScan",
+        "isVisible": true,
+        "onClick": AS_Button_14c7e7561ad64d9c9dd99165b7e13486,
+        "skin": "CopyslButtonGlossBlue0f280a71a262d4b",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    ScanCont.add(ScanImg, BtnScan);
+    var LogoutCont = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "20dp",
+        "id": "LogoutCont",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "90.80%",
+        "skin": "slFbox",
+        "top": "29.80%",
+        "width": "20dp",
+        "zIndex": 1
+    }, {}, {});
+    LogoutCont.setDefaultUnit(kony.flex.DP);
+    var LogoutImg = new kony.ui.Image2({
+        "centerX": "50%",
+        "centerY": "50%",
+        "height": "100%",
+        "id": "LogoutImg",
+        "isVisible": true,
+        "skin": "slImage",
+        "src": "logout_icon.png",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    var BtnLogout = new kony.ui.Button({
+        "centerX": "50%",
+        "centerY": "50%",
+        "focusSkin": "slButtonGlossRed",
+        "height": "100%",
+        "id": "BtnLogout",
+        "isVisible": true,
+        "skin": "CopyslButtonGlossBlue0f280a71a262d4b",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_CENTER,
+        "displayText": true,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    LogoutCont.add(LogoutImg, BtnLogout);
+    flxHeader.add(flxsrch, imgLogo, lblTitle1, lblTitle2, SearchCont, ScanCont, LogoutCont);
     var flxSearch = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": false,
@@ -153,16 +332,16 @@ function addWidgetsfrmHome() {
     flxsrc.add(imgCopySearch);
     flxSearch.add(txtEnter, flxsrc);
     var tabHome = new kony.ui.TabPane({
-        "activeSkin": "MyCustom",
+        "activeSkin": "customNewActive",
         "activeTabs": [0],
-        "height": "90%",
+        "centerX": "50.09%",
+        "centerY": "52.98%",
+        "height": "94%",
         "id": "tabHome",
-        "inactiveSkin": "MyInactive",
+        "inactiveSkin": "customNewInactive",
         "isVisible": true,
         "layoutType": constants.CONTAINER_LAYOUT_BOX,
-        "left": "-0.03%",
         "maxHeight": "100px",
-        "top": "9.98%",
         "viewConfig": {
             "collapsibleViewConfig": {
                 "imagePosition": constants.TABPANE_COLLAPSIBLE_IMAGE_POSITION_RIGHT,
@@ -215,65 +394,274 @@ function addWidgetsfrmHome() {
         "paddingInPixel": false
     }, {});
     tabMyEvent.setDefaultUnit(kony.flex.DP);
+    var IdentityCont = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "clipBounds": true,
+        "height": "38.60%",
+        "id": "IdentityCont",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "skin": "CopyslFbox00f9eaca5ece64b",
+        "top": "0dp",
+        "width": "100%",
+        "zIndex": 1
+    }, {}, {});
+    IdentityCont.setDefaultUnit(kony.flex.DP);
+    var TotalPointsCont = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "15%",
+        "id": "TotalPointsCont",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "3.20%",
+        "skin": "slFbox",
+        "top": "67.50%",
+        "width": "30%",
+        "zIndex": 1
+    }, {}, {});
+    TotalPointsCont.setDefaultUnit(kony.flex.DP);
+    var lblTotalPointsName = new kony.ui.Label({
+        "centerY": "50%",
+        "id": "lblTotalPointsName",
+        "isVisible": true,
+        "left": "7%",
+        "skin": "CopyslLabel01070873a9e4f42",
+        "text": "Total Points ",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var lblTotalPoints = new kony.ui.Label({
+        "centerY": "45%",
+        "id": "lblTotalPoints",
+        "isVisible": true,
+        "left": "3%",
+        "skin": "CopyslLabel05790fdbdaa3046",
+        "text": "125",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "top": "0dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    TotalPointsCont.add(lblTotalPointsName, lblTotalPoints);
+    var RankCont = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "15%",
+        "id": "RankCont",
+        "isVisible": true,
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "left": "82%",
+        "skin": "slFbox",
+        "top": "67.50%",
+        "width": "13%",
+        "zIndex": 1
+    }, {}, {});
+    RankCont.setDefaultUnit(kony.flex.DP);
+    var lblRankName = new kony.ui.Label({
+        "centerY": "50%",
+        "id": "lblRankName",
+        "isVisible": true,
+        "left": "7%",
+        "skin": "CopyslLabel01070873a9e4f42",
+        "text": "Rank ",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var lblRank = new kony.ui.Label({
+        "centerY": "45%",
+        "id": "lblRank",
+        "isVisible": true,
+        "left": "8%",
+        "skin": "CopyslLabel05790fdbdaa3046",
+        "text": "5",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "top": "0dp",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    RankCont.add(lblRankName, lblRank);
+    var ImageCont = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "centerX": "50%",
+        "centerY": "31%",
+        "clipBounds": true,
+        "height": "44%",
+        "id": "ImageCont",
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "130%",
+        "skin": "CopyslFbox0d370c608955240",
+        "top": "17dp",
+        "width": "28%",
+        "zIndex": 1
+    }, {}, {});
+    ImageCont.setDefaultUnit(kony.flex.DP);
+    var IdentityImg = new kony.ui.Image2({
+        "centerX": "50%",
+        "centerY": "50%",
+        "height": "100%",
+        "id": "IdentityImg",
+        "isVisible": true,
+        "skin": "slImage",
+        "src": "image4.png",
+        "width": "100%",
+        "zIndex": 1
+    }, {
+        "imageScaleMode": constants.IMAGE_SCALE_MODE_MAINTAIN_ASPECT_RATIO,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {});
+    ImageCont.add(IdentityImg);
+    var lblName = new kony.ui.Label({
+        "centerX": "50.50%",
+        "id": "lblName",
+        "isVisible": true,
+        "skin": "CopyslLabel0a94b25fe7d8e4b",
+        "text": "Kunal",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "top": "52.70%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    IdentityCont.add(TotalPointsCont, RankCont, ImageCont, lblName);
     var segMyEvents = new kony.ui.SegmentedUI2({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
         "data": [{
-            "Image0715357f567144f": "option2.png",
-            "Image0de095705a52b4a": "k.png",
+            "Image0715357f567144f": "rankshape.png",
+            "RankImg": "rankshape.png",
             "lblEventName": "Event Name",
+            "lblLine": "",
             "lblPlace": "Board Room: Phoenix",
-            "lblTime": "10 AM - 01 PM"
+            "lblPlaceName": "10 AM - 01 PM",
+            "lblPoints": "30",
+            "lblPointsName": "Points:",
+            "lblRank": "3",
+            "lblRankName": "Rank",
+            "lblTime": "10 AM - 01 PM",
+            "lblTimeName": "10 AM - 01 PM"
         }, {
-            "Image0715357f567144f": "option2.png",
-            "Image0de095705a52b4a": "k.png",
+            "Image0715357f567144f": "rankshape.png",
+            "RankImg": "rankshape.png",
             "lblEventName": "Event Name",
+            "lblLine": "",
             "lblPlace": "Board Room: Phoenix",
-            "lblTime": "10 AM - 01 PM"
+            "lblPlaceName": "10 AM - 01 PM",
+            "lblPoints": "30",
+            "lblPointsName": "Points:",
+            "lblRank": "3",
+            "lblRankName": "Rank",
+            "lblTime": "10 AM - 01 PM",
+            "lblTimeName": "10 AM - 01 PM"
         }, {
-            "Image0715357f567144f": "option2.png",
-            "Image0de095705a52b4a": "k.png",
+            "Image0715357f567144f": "rankshape.png",
+            "RankImg": "rankshape.png",
             "lblEventName": "Event Name",
+            "lblLine": "",
             "lblPlace": "Board Room: Phoenix",
-            "lblTime": "10 AM - 01 PM"
+            "lblPlaceName": "10 AM - 01 PM",
+            "lblPoints": "30",
+            "lblPointsName": "Points:",
+            "lblRank": "3",
+            "lblRankName": "Rank",
+            "lblTime": "10 AM - 01 PM",
+            "lblTimeName": "10 AM - 01 PM"
         }],
         "groupCells": false,
         "height": "100%",
         "id": "segMyEvents",
         "isVisible": true,
-        "left": "0%",
         "needPageIndicator": true,
+        "onRowClick": AS_Segment_1df2f5cdad5e4ecfb29b0cd7c893ee95,
         "pageOffDotImage": "pageoffdot.png",
         "pageOnDotImage": "pageondot.png",
         "retainSelection": false,
         "rowFocusSkin": "seg2Focus",
         "rowSkin": "Copyseg0ba2f20fe8da642",
-        "rowTemplate": FlexContainer0c577657195b747,
+        "rowTemplate": EventMainCont,
         "scrollingEvents": {},
         "sectionHeaderSkin": "sliPhoneSegmentHeader",
         "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
         "separatorRequired": false,
         "showScrollbars": false,
-        "top": "0%",
+        "top": "31.70%",
         "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
         "widgetDataMap": {
-            "FlexContainer038608931f4704b": "FlexContainer038608931f4704b",
-            "FlexContainer03fddf65ed89949": "FlexContainer03fddf65ed89949",
-            "FlexContainer088575ed9a3ca42": "FlexContainer088575ed9a3ca42",
-            "FlexContainer0c577657195b747": "FlexContainer0c577657195b747",
+            "CardCont": "CardCont",
+            "EventMainCont": "EventMainCont",
             "Image0715357f567144f": "Image0715357f567144f",
-            "Image0de095705a52b4a": "Image0de095705a52b4a",
+            "LocationCont": "LocationCont",
+            "PointsCont": "PointsCont",
+            "RankCont": "RankCont",
+            "RankImg": "RankImg",
+            "TimeCont": "TimeCont",
             "lblEventName": "lblEventName",
+            "lblLine": "lblLine",
             "lblPlace": "lblPlace",
-            "lblTime": "lblTime"
+            "lblPlaceName": "lblPlaceName",
+            "lblPoints": "lblPoints",
+            "lblPointsName": "lblPointsName",
+            "lblRank": "lblRank",
+            "lblRankName": "lblRankName",
+            "lblTime": "lblTime",
+            "lblTimeName": "lblTimeName"
         },
         "width": "100%",
-        "zIndex": 1
+        "zIndex": 5
     }, {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    tabMyEvent.add(segMyEvents);
+    tabMyEvent.add(IdentityCont, segMyEvents);
     tabHome.addTab("tabMyEvent", "My Event", null, tabMyEvent, null);
     var tabEvent = new kony.ui.FlexContainer({
         "clipBounds": true,
@@ -294,49 +682,67 @@ function addWidgetsfrmHome() {
     var segEvents = new kony.ui.SegmentedUI2({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "data": [{
+            "ButtonEnroll": "ENROLL",
             "imgComment": "comment.png",
             "imgEnroll": "enroll.png",
-            "imgEvent": "bck.PNG",
+            "imgEvent": "carousel1.png",
             "imgLike": "like.png",
             "lblCompleted": "Completed",
-            "lblDate": "January 16, 2017",
+            "lblDate": "Jan 17",
+            "lblDay": "22",
             "lblDescription": "The event is all about searching an item, the item could be anything of any size depending on the team size. The winner would be highest percentage.",
+            "lblEventID": "Label",
             "lblEventName": "Scavenger Hunt",
-            "lblMax": "Max Score",
+            "lblLocation": "Phoenix",
+            "lblLocationName": "Location :",
+            "lblMax": "Points",
             "lblOngoing": "Ongoing",
             "lblScore": "80",
             "lblSeparator": "k",
-            "lblTest": "Label",
+            "lblTime": "10 AM - 10 PM",
+            "lblTimeName": "Time :",
             "lblUpcoming": "Upcoming"
         }, {
+            "ButtonEnroll": "ENROLL",
             "imgComment": "comment.png",
             "imgEnroll": "enroll.png",
-            "imgEvent": "bck.PNG",
+            "imgEvent": "carousel4.png",
             "imgLike": "like.png",
             "lblCompleted": "Completed",
-            "lblDate": "January 16, 2017",
+            "lblDate": "Jan 17",
+            "lblDay": "22",
             "lblDescription": "The event is all about searching an item, the item could be anything of any size depending on the team size. The winner would be highest percentage.",
+            "lblEventID": "Label",
             "lblEventName": "Scavenger Hunt",
-            "lblMax": "Max Score",
+            "lblLocation": "Phoenix",
+            "lblLocationName": "Location :",
+            "lblMax": "Points",
             "lblOngoing": "Ongoing",
             "lblScore": "80",
             "lblSeparator": "k",
-            "lblTest": "Label",
+            "lblTime": "10 AM - 10 PM",
+            "lblTimeName": "Time :",
             "lblUpcoming": "Upcoming"
         }, {
+            "ButtonEnroll": "ENROLL",
             "imgComment": "comment.png",
             "imgEnroll": "enroll.png",
-            "imgEvent": "bck.PNG",
+            "imgEvent": "carousel3.png",
             "imgLike": "like.png",
             "lblCompleted": "Completed",
-            "lblDate": "January 16, 2017",
+            "lblDate": "Jan17",
+            "lblDay": "22",
             "lblDescription": "The event is all about searching an item, the item could be anything of any size depending on the team size. The winner would be highest percentage.",
+            "lblEventID": "Label",
             "lblEventName": "Scavenger Hunt",
-            "lblMax": "Max Score",
+            "lblLocation": "Phoenix",
+            "lblLocationName": "Location :",
+            "lblMax": "Points",
             "lblOngoing": "Ongoing",
             "lblScore": "80",
             "lblSeparator": "k",
-            "lblTest": "Label",
+            "lblTime": "10 AM - 10 PM",
+            "lblTimeName": "Time :",
             "lblUpcoming": "Upcoming"
         }],
         "groupCells": false,
@@ -360,7 +766,13 @@ function addWidgetsfrmHome() {
         "top": "0%",
         "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
         "widgetDataMap": {
+            "ButtonEnroll": "ButtonEnroll",
+            "DateCont": "DateCont",
             "FlexContainer0a592a32577c646": "FlexContainer0a592a32577c646",
+            "LocationCont": "LocationCont",
+            "StatusCont": "StatusCont",
+            "TimeCont": "TimeCont",
+            "flxBottom": "flxBottom",
             "flxComment": "flxComment",
             "flxDesc": "flxDesc",
             "flxEnroll": "flxEnroll",
@@ -376,13 +788,18 @@ function addWidgetsfrmHome() {
             "imgLike": "imgLike",
             "lblCompleted": "lblCompleted",
             "lblDate": "lblDate",
+            "lblDay": "lblDay",
             "lblDescription": "lblDescription",
+            "lblEventID": "lblEventID",
             "lblEventName": "lblEventName",
+            "lblLocation": "lblLocation",
+            "lblLocationName": "lblLocationName",
             "lblMax": "lblMax",
             "lblOngoing": "lblOngoing",
             "lblScore": "lblScore",
             "lblSeparator": "lblSeparator",
-            "lblTest": "lblTest",
+            "lblTime": "lblTime",
+            "lblTimeName": "lblTimeName",
             "lblUpcoming": "lblUpcoming"
         },
         "width": "100%",
@@ -393,82 +810,6 @@ function addWidgetsfrmHome() {
     }, {});
     tabEvent.add(segEvents);
     tabHome.addTab("tabEvent", "Events", null, tabEvent, null);
-    var tabLeadership = new kony.ui.FlexContainer({
-        "clipBounds": true,
-        "height": "100%",
-        "id": "tabLeadership",
-        "isVisible": true,
-        "layoutType": kony.flex.FREE_FORM,
-        "orientation": constants.BOX_LAYOUT_VERTICAL,
-        "skin": "slTab",
-        "tabName": "Leader Board",
-        "width": "100%"
-    }, {
-        "layoutType": kony.flex.FREE_FORM,
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {});
-    tabLeadership.setDefaultUnit(kony.flex.DP);
-    var segLeadership = new kony.ui.SegmentedUI2({
-        "autogrowMode": kony.flex.AUTOGROW_NONE,
-        "centerX": "50%",
-        "data": [{
-            "imgLeader": "leader.png",
-            "lblId": "jennifer.ding@kony.com",
-            "lblName": "Jennifer Ding Ding",
-            "lblScore": "28",
-            "lblScoreName": "Total Score:"
-        }, {
-            "imgLeader": "leader.png",
-            "lblId": "jennifer.ding@kony.com",
-            "lblName": "Jennifer Ding Ding",
-            "lblScore": "28",
-            "lblScoreName": "Total Score:"
-        }, {
-            "imgLeader": "leader.png",
-            "lblId": "jennifer.ding@kony.com",
-            "lblName": "Jennifer Ding Ding",
-            "lblScore": "28",
-            "lblScoreName": "Total Score:"
-        }],
-        "groupCells": false,
-        "height": "100%",
-        "id": "segLeadership",
-        "isVisible": true,
-        "left": "0%",
-        "needPageIndicator": true,
-        "pageOffDotImage": "pageoffdot.png",
-        "pageOnDotImage": "pageondot.png",
-        "retainSelection": false,
-        "rowFocusSkin": "seg2Focus",
-        "rowSkin": "seg2Normal",
-        "rowTemplate": flxLeaderMain,
-        "scrollingEvents": {},
-        "sectionHeaderSkin": "sliPhoneSegmentHeader",
-        "selectionBehavior": constants.SEGUI_DEFAULT_BEHAVIOR,
-        "separatorRequired": false,
-        "showScrollbars": false,
-        "top": "0%",
-        "viewType": constants.SEGUI_VIEW_TYPE_TABLEVIEW,
-        "widgetDataMap": {
-            "flxDetail": "flxDetail",
-            "flxLeaderImage": "flxLeaderImage",
-            "flxLeaderMain": "flxLeaderMain",
-            "flxSub": "flxSub",
-            "imgLeader": "imgLeader",
-            "lblId": "lblId",
-            "lblName": "lblName",
-            "lblScore": "lblScore",
-            "lblScoreName": "lblScoreName"
-        },
-        "width": "100%",
-        "zIndex": 1
-    }, {
-        "padding": [0, 0, 0, 0],
-        "paddingInPixel": false
-    }, {});
-    tabLeadership.add(segLeadership);
-    tabHome.addTab("tabLeadership", "Leader Board", null, tabLeadership, null);
     flxHome.add(flxHeader, flxSearch, tabHome);
     var flxComment = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -521,17 +862,17 @@ function addWidgetsfrmHome() {
         "zIndex": 3
     }, {}, {});
     flxEnroll.setDefaultUnit(kony.flex.DP);
-    var btnEnrollDone = new kony.ui.Button({
-        "centerX": "50%",
-        "centerY": "50%",
+    var btnEnrollYes = new kony.ui.Button({
         "focusSkin": "slButtonGlossRed",
-        "height": "10%",
-        "id": "btnEnrollDone",
+        "height": "20%",
+        "id": "btnEnrollYes",
         "isVisible": true,
+        "left": "20%",
         "onClick": AS_Button_0aafcaa1058640858486496ac79e9c45,
         "skin": "CopyslButtonGlossBlue0e1b8b2daf18046",
-        "text": "Back",
-        "width": "50%",
+        "text": "Yes",
+        "top": "70%",
+        "width": "20%",
         "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
@@ -539,26 +880,46 @@ function addWidgetsfrmHome() {
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    flxEnroll.add(btnEnrollDone);
-    var Button0736fee25eaf846 = new kony.ui.Button({
-        "focusSkin": "slButtonGlossRed",
-        "height": "50dp",
-        "id": "Button0736fee25eaf846",
+    var lblQuote = new kony.ui.Label({
+        "id": "lblQuote",
         "isVisible": true,
-        "left": "247dp",
-        "onClick": AS_Button_13677ee64c7c411e80bbffec309fbc2e,
-        "skin": "slButtonGlossBlue",
-        "text": "Button",
-        "top": "6dp",
-        "width": "67dp",
-        "zIndex": 3
+        "left": "10%",
+        "skin": "CopyslLabel0aa574c95ed7648",
+        "text": "Are you sure you want to enroll ?",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "top": "10%",
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var CopybtnEnrollYes0e944663eba9c4d = new kony.ui.Button({
+        "focusSkin": "slButtonGlossRed",
+        "height": "20%",
+        "id": "CopybtnEnrollYes0e944663eba9c4d",
+        "isVisible": true,
+        "left": "60%",
+        "onClick": AS_Button_49fbb61f80224be8b9cb49610fd529cf,
+        "skin": "CopyslButtonGlossBlue0e1b8b2daf18046",
+        "text": "No",
+        "top": "70%",
+        "width": "20%",
+        "zIndex": 1
     }, {
         "contentAlignment": constants.CONTENT_ALIGN_CENTER,
         "displayText": true,
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    frmHome.add(flxHome, flxComment, flxEnroll, Button0736fee25eaf846);
+    flxEnroll.add(btnEnrollYes, lblQuote, CopybtnEnrollYes0e944663eba9c4d);
+    frmHome.add(flxHome, flxComment, flxEnroll);
 };
 
 function frmHomeGlobals() {

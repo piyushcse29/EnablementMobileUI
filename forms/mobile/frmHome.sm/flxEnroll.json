@@ -44,7 +44,9 @@
         "value": "50%"
     },
     "children": [
-        "btnEnrollDone"
+        "btnEnrollYes",
+        "lblQuote",
+        "CopybtnEnrollYes0e944663eba9c4d"
     ],
     "clipbounds": true,
     "containerweight": 100,

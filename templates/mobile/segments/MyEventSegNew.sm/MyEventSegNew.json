@@ -21,7 +21,7 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "FlexContainer0c577657195b747"
+        "EventMainCont"
     ],
     "containerId": true,
     "containerweight": 100,

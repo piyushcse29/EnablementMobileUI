@@ -54,7 +54,7 @@
             "wrapping": 2
         }
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "982451ec268f424eb44d7760f923fb12",
     "name": "kony.ui.Label",
     "parent": "flxEventPic",

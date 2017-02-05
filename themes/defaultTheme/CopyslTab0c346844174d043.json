@@ -1,6 +1,6 @@
 {
-  "background_image": "eventhomebck.png",
-  "bg_type": "image",
+  "background_color": "f9f9feff",
+  "bg_type": "one",
   "border_color": "000000ff",
   "border_style": "plain",
   "border_type": 0,

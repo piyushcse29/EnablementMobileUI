@@ -1,8 +1,10 @@
 {
   "android": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
-    "border_color": "00000075",
+    "border_color": "00000002",
+    "border_radius": 5,
+    "border_style": "custom",
     "border_type": 0,
     "isForked": true
   },
@@ -13,7 +15,7 @@
   "border_type": 0,
   "border_width": 1,
   "desktopweb": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
     "bottom_left_border_color": "00000035",
     "bottom_left_border_style": "plain",
@@ -38,9 +40,11 @@
     "top_right_border_width": 1
   },
   "ipad": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
-    "border_color": "00000075",
+    "border_color": "00000002",
+    "border_radius": 5,
+    "border_style": "custom",
     "border_type": 0,
     "isForked": true,
     "shadow": {
@@ -53,9 +57,11 @@
     }
   },
   "iphone": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
-    "border_color": "00000075",
+    "border_color": "00000002",
+    "border_radius": 5,
+    "border_style": "custom",
     "border_type": 0,
     "isForked": true,
     "shadow": {
@@ -69,15 +75,17 @@
   },
   "isDefaultSkin": false,
   "kiosk": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
-    "border_color": "00000075",
+    "border_color": "00000002",
+    "border_radius": 5,
+    "border_style": "custom",
     "border_type": 0,
     "isForked": true
   },
   "kuid": "s4031adfcc61446a93c745fbed8a0def",
   "spaan": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
     "bottom_left_border_color": "00000035",
     "bottom_left_border_style": "plain",
@@ -102,7 +110,7 @@
     "top_right_border_width": 1
   },
   "spaandroidtablet": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
     "bottom_left_border_color": "00000035",
     "bottom_left_border_style": "plain",
@@ -127,7 +135,7 @@
     "top_right_border_width": 1
   },
   "spabb": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
     "bottom_left_border_color": "00000035",
     "bottom_left_border_style": "plain",
@@ -152,7 +160,7 @@
     "top_right_border_width": 1
   },
   "spaip": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
     "bottom_left_border_color": "00000035",
     "bottom_left_border_style": "plain",
@@ -177,7 +185,7 @@
     "top_right_border_width": 1
   },
   "spaipad": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
     "bottom_left_border_color": "00000035",
     "bottom_left_border_style": "plain",
@@ -202,7 +210,7 @@
     "top_right_border_width": 1
   },
   "spawindowstablet": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
     "bottom_left_border_color": "00000035",
     "bottom_left_border_style": "plain",
@@ -227,7 +235,7 @@
     "top_right_border_width": 1
   },
   "spawinphone8": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
     "bottom_left_border_color": "00000035",
     "bottom_left_border_style": "plain",
@@ -252,24 +260,30 @@
     "top_right_border_width": 1
   },
   "tabrcandroid": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
-    "border_color": "00000075",
+    "border_color": "00000002",
+    "border_radius": 5,
+    "border_style": "custom",
     "border_type": 0,
     "isForked": true
   },
   "wType": "FlexContainer",
   "windows8": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
-    "border_color": "00000075",
+    "border_color": "00000002",
+    "border_radius": 5,
+    "border_style": "custom",
     "border_type": 0,
     "isForked": true
   },
   "winphone8": {
-    "background_color": "00000000",
+    "background_color": "ffffffff",
     "bg_type": "one",
-    "border_color": "00000075",
+    "border_color": "00000002",
+    "border_radius": 5,
+    "border_style": "custom",
     "border_type": 0,
     "isForked": true
   }

@@ -3,11 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "10%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "0%"
+        "value": "6%"
     },
     "_margin_": [
         0,
@@ -24,10 +20,6 @@
     ],
     "_percent_": true,
     "_skin_": "s25dc10c8be54436956eb6b50a89d3e3",
-    "_top_": {
-        "type": "string",
-        "value": "0%"
-    },
     "_width_": {
         "type": "string",
         "value": "100%"
@@ -35,9 +27,22 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "3%"
+    },
     "children": [
         "flxsrch",
-        "imgLogo"
+        "imgLogo",
+        "lblTitle1",
+        "lblTitle2",
+        "SearchCont",
+        "ScanCont",
+        "LogoutCont"
     ],
     "clipbounds": true,
     "containerweight": 100,

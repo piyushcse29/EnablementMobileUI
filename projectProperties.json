@@ -8,7 +8,7 @@
     "apppackagekey": "",
     "wap_android400_fontsize": "12",
     "nativeContainerProperties": {
-        "isModified": false,
+        "isModified": true,
         "isEnableJSContainer": false,
         "isEnableJSContainerAndroid": false,
         "isEnableJSContaineriOS": false
@@ -153,7 +153,7 @@
     "wap_bb440_fontsize": "12",
     "mwhttpsportkey": "",
     "wap_bb400_fontsize": "12",
-    "appidkey": "EnablementGo",
+    "appidkey": "EnablementGoUI",
     "statusBarHidden": "false",
     "wap_bb360_fontsize": "12",
     "wap_spawindowstab_fontsize": "12",
@@ -162,7 +162,7 @@
     "defaulttheme": "defaultTheme",
     "watchos_shortlooknotificationicon_38": "",
     "appaddrkey": "",
-    "appnamekey": "EnablementGo",
+    "appnamekey": "TestTabs",
     "currentgaversion": "7.2.0",
     "enableCordova": false,
     "wap_bb320_fontsize": "12",

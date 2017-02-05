@@ -1,0 +1,61 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "38.60%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s913d2e1f63f4ec1bef47072881ca33b",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "TotalPointsCont",
+        "RankCont",
+        "ImageCont",
+        "lblName"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "IdentityCont",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d905c6843464496190f6de5e2d4595c9",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "tabMyEvent",
+    "pf": "frmHome",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "tabpaneId": "tabHome",
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

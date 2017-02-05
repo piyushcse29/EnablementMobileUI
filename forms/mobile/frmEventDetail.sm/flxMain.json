@@ -23,7 +23,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s567480f638549edac10c49013987fcf",
+    "_skin_": "s5b2c73c2c574980a002e596e464f8cd",
     "_top_": {
         "type": "string",
         "value": "0%"
@@ -40,7 +40,6 @@
     "children": [
         "flxEventPic",
         "flxEventDescription",
-        "flxSchedule",
         "btnEnroll"
     ],
     "clipbounds": true,

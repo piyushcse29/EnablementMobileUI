@@ -47,7 +47,7 @@
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "1dccb5473d0649bd986089f7d7314d2a",
     "name": "kony.ui.Image2",
     "parent": "flxHeader",

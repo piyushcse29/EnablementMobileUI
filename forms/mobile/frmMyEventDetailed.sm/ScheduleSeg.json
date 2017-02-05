@@ -1,0 +1,222 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "CheckImg": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tickicn.png"
+            },
+            "Label08b194af0dc3d41": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ongoing"
+            },
+            "Linelbl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22 Jan 2017"
+            },
+            "lblDateName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date : "
+            },
+            "lblSep2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "------------------"
+            },
+            "lblSeparater": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "| | | | | | | | | | | | | | | | |"
+            },
+            "lblStageName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Session - 1"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 AM - 2 PM"
+            }
+        },
+        {
+            "CheckImg": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tickicn.png"
+            },
+            "Label08b194af0dc3d41": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ongoing"
+            },
+            "Linelbl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22 Jan 2017"
+            },
+            "lblDateName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date : "
+            },
+            "lblSep2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "------------------"
+            },
+            "lblSeparater": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "| | | | | | | | | | | | | | | | |"
+            },
+            "lblStageName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Session - 1"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 AM - 2 PM"
+            }
+        },
+        {
+            "CheckImg": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tickicn.png"
+            },
+            "Label08b194af0dc3d41": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ongoing"
+            },
+            "Linelbl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22 Jan 2017"
+            },
+            "lblDateName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Date : "
+            },
+            "lblSep2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "------------------"
+            },
+            "lblSeparater": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "| | | | | | | | | | | | | | | | |"
+            },
+            "lblStageName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Session - 1"
+            },
+            "lblTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 AM - 2 PM"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "12.50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "ScheduleSeg",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "7798d8fabe7d468aa218f21e3fcbc50c",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSchedule",
+    "pf": "frmMyEventDetailed",
+    "retainselection": false,
+    "rowTemplateId": "860df1cf08354b6a8c4f84551c99e38a",
+    "rowcounter": 2,
+    "rowfocusskin": "sb363cb48fd64acab480a2d6cb7d446c",
+    "rowskin": "s0a33b74eb5647d29b9a332e4be0c417",
+    "rowtemplate": "CopyflxMyEvent0db10d8d616a84e",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sbf9de645a884e69803ed2739ee8a61b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "CheckImg": "CheckImg",
+        "CkeckBox": "CkeckBox",
+        "CopyflxMyEvent0db10d8d616a84e": "CopyflxMyEvent0db10d8d616a84e",
+        "DateNTimeCont": "DateNTimeCont",
+        "Label08b194af0dc3d41": "Label08b194af0dc3d41",
+        "Linelbl": "Linelbl",
+        "ScheduleCont": "ScheduleCont",
+        "flxMyEventDetail": "flxMyEventDetail",
+        "lblDate": "lblDate",
+        "lblDateName": "lblDateName",
+        "lblSep2": "lblSep2",
+        "lblSeparater": "lblSeparater",
+        "lblStageName": "lblStageName",
+        "lblTime": "lblTime"
+    },
+    "zindex": 1
+}

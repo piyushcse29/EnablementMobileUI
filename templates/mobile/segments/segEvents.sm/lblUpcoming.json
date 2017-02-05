@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "7%"
     },
     "_margin_": [
         1,
@@ -23,10 +23,10 @@
         0
     ],
     "_skin_": "s53ec59d2e5048eebeebe6c02dd695c0",
-    "_text_": "Upcoming",
+    "_text_": "UPCOMING",
     "_top_": {
         "type": "string",
-        "value": "20%"
+        "value": "10%"
     },
     "_width_": {
         "type": "ref",
@@ -58,7 +58,7 @@
     "isvisible": true,
     "kuid": "a1802678e05c453e825396fbdbaa7585",
     "name": "kony.ui.Label",
-    "parent": "FlexContainer0a592a32577c646",
+    "parent": "StatusCont",
     "pf": "segEvents",
     "tooltip": "",
     "wType": "Label",
