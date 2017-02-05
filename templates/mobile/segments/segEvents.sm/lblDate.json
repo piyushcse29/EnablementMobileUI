@@ -6,10 +6,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "5%"
-    },
     "_margin_": [
         1,
         1,
@@ -23,10 +19,10 @@
         0
     ],
     "_skin_": "s442b044b6ac4f47ba2dbef421d22111",
-    "_text_": "January 16, 2017",
+    "_text_": "Feb 17",
     "_top_": {
         "type": "string",
-        "value": "60%"
+        "value": "51.50%"
     },
     "_width_": {
         "type": "ref",
@@ -40,6 +36,10 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
@@ -58,7 +58,7 @@
     "isvisible": true,
     "kuid": "f3c4d556d43e4136a5b2866d0717638e",
     "name": "kony.ui.Label",
-    "parent": "flxHeader",
+    "parent": "DateCont",
     "pf": "segEvents",
     "tooltip": "",
     "wType": "Label",

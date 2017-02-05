@@ -37,8 +37,7 @@
     "canUpdateUI": true,
     "children": [
         "flxLike",
-        "flxComment",
-        "flxEnroll"
+        "flxComment"
     ],
     "clipbounds": true,
     "containerId": true,
@@ -46,7 +45,7 @@
     "enablescrolling": true,
     "id": "flxFooter",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "eef8121992174b668f3690b06f548f45",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

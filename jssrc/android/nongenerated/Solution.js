@@ -1,27 +1,9 @@
-//Type your code here
 var sdkClient = null;
 response = null;
+var event = [],
+    session = [];
 var error;
-
-function initializeApp() {
-    try {
-        var key = "41d4b94bc7d0b07194152dc6b24267be";
-        var secret = "7fe9ef21224bca50b3fc58541ce74b3b";
-        var surl = "https://100003520.auth.konycloud.com/appconfig";
-        sdkClient = new kony.sdk();
-        sdkClient.init(key, secret, surl, function(response) {
-            alert("init success");
-            //getData();
-            showeventsf();
-            // showsessionsfunct();
-            // showSessionsfunction();
-        }, function(err) {
-            alert("client init error " + JSON.stringify(err));
-        });
-    } catch (e) {
-        alert(e);
-    }
-}
+var userId, eventId;
 
 function showeventsf() {
     var integrationObj = kony.sdk.getCurrentInstance().getIntegrationService("IntServ");
@@ -32,16 +14,21 @@ function showeventsf() {
 }
 
 function successCallBack1(res) {
-    //alert("success"+JSON.stringify(res));
-    // var myObj = JSON.parse(res);	
     var obj = [];
+    session = [];
+    frmEventDetail.ScheduleSeg.removeAll();
     for (var i = 0; i < res.result.length; i++) {
         obj.push({
             "location": res.result[i].location,
+            "event_id": res.result[i].event_id,
             "name": res.result[i].name,
-            /*"max_score":res.result[i].max_score,*/ "description": res.result[i].description
+            "max_score": res.result[i].max_score,
+            "description": res.result[i].description
         });
-        //obj.push({"name":res.result[i].name});
+        event.push(res.result[i].event_id);
+        session.push({
+            "sessions": res.result[i].sessions
+        });
     }
     frmHome.tabHome.tabMyEvent.segMyEvents.widgetDataMap = {
         "lblPlace": "location",
@@ -49,9 +36,12 @@ function successCallBack1(res) {
     };
     frmHome.tabHome.tabMyEvent.segMyEvents.setData(obj);
     frmHome.tabHome.tabEvent.segEvents.widgetDataMap = {
+        "lblLocation": "location",
         "lblEventName": "name",
-        "lblDescription": "description"
-    }; //"lblScore":"max_score"};
+        "lblDescription": "description",
+        "lblEventID": "event_id",
+        "lblScore": "max_score"
+    };
     frmHome.tabHome.tabEvent.segEvents.setData(obj);
 }
 
@@ -61,69 +51,76 @@ function failureCallBack1(err) {
     alert(error);
 }
 
-function setData(res) {
-    var widgetMapping = {};
-    widgetMapping["lblTest"] = "lat";
-    frmHome.segEvents.widgetDataMap = widgetMapping;
-    // alert("data in seg"+JSON.stringify(frmHome.segEvents.data));
-    alert(res);
-    frmHome.segEvents.addAll(res);
+function enroll() {
+    var integrationObj = kony.sdk.getCurrentInstance().getIntegrationService("IntServ");
+    var operationName = "enroll";
+    var data = {
+        "eventid": eventId, // the variable you will store the event name in
+        "userid": userId, // the variable you will store the id in
+    };
+    var headers = {};
+    integrationObj.invokeOperation(operationName, headers, data, successCallBack2, failureCallBack2);
 }
-// function showsessionsfunct()
-//   	{
-//     var integrationObj = kony.sdk.getCurrentInstance().getIntegrationService("IntServ");
-//   	var operationName = "showSessions1";
-// 	var data = {};
-//     var headers = {};	
-//     integrationObj.invokeOperation(operationName, headers, data, successCallBack2, failureCallBack2);
-//     }
-// function successCallBack2(res){
-//   alert("in success");
-//    // alert("success"+JSON.stringify((res["result"][0]).coord));
-//     response=res.result[0].sessions[0].session_name;
-//     alert(res.result[0].sessions.length); 
-//   setData(res);
-// }
-// function failureCallBack2(err){
-//       var error =res;
-//   //kony.print(JSON.stringify(error));
-//   alert(error);
-// }
-// function setData(res){
-//      var data1=[];
-// for(var i=0;i<res.result[0].sessions.length;i++){
-// var obj={
-// “lblEventName”:(res.result[0].sessions[i]).session_name,
-// }
-// Data1.push(obj);
-// }
-// frmHome.flxHome.tabHome.segEvents.setData(data1); 
-//     }
-// function showSessionsfunction()
-//   	{
-//     var integrationObj = sdkClient.getIntegrationService("IntServ");
-//   	var operationName = "showSession2";
-// 	var data = {};
-//     var headers = {};	
-//     integrationObj.invokeOperation(operationName, headers, data, successCallBack3, failureCallBack3);
-//     }
-// function successCallBack3(res){
-//     alert("success"+JSON.stringify((res["result"][0]).coord));
-//     response=(res["result"][0]).coord.lon;
-//     alert(res.coord.lon); 
-// }
-// function failureCallBack3(err){
-//       var error =res;
-//   //kony.print(JSON.stringify(error));
-//   alert(error);
-// }
+
+function successCallBack2(res) {
+    alert("success" + JSON.stringify(res));
+}
+
+function failureCallBack2(err) {
+    alert("error");
+}
+
+function eventID() {
+    var row = frmHome.segEvents.selectedRowIndex[1];
+    var i = " " + parseInt(row);
+    var x = i.trim();
+    eventId = arr[x];
+    alert("event id " + eventId);
+}
+
+function eventDetail() {
+    frmEventDetail.lblMyEventName.text = frmHome.segEvents.selectedItems[0].name;
+    frmEventDetail.lblLocation.text = frmHome.segEvents.selectedItems[0].location;
+    frmEventDetail.lblPoints.text = frmHome.segEvents.selectedItems[0].max_score;
+    frmEventDetail.txtDescription.text = frmHome.segEvents.selectedItems[0].description;
+    var row = frmHome.segEvents.selectedRowIndex[1];
+    var i = " " + parseInt(row);
+    var x = i.trim();
+    frmEventDetail.ScheduleSeg.widgetDataMap = {
+        "lblStageName": "session_name"
+    };
+    frmEventDetail.ScheduleSeg.setData(session[x].sessions);
+}
+
 function login() {
-    var oAuthObj = sdkClient.getIdentityService("MSLogin");
+    var client = kony.sdk.getCurrentInstance();
+    var oAuthObj = client.getIdentityService("MSLogin");
     var loginObj = oAuthObj.login({}, function(res) {
-        alert("Login Success" + res);
+        var profile = oAuthObj.getProfile(false, function(profile) {
+            email = profile.email;
+            username = profile.firstname + " " + profile.lastname;
+            kony.print("myString " + email + username);
+        }, function(error) {
+            kony.application.dismissLoadingScreen();
+            alert("Error occured while fetching the profile.");
+        });
+        //kony.print("myString "+profile);
         alert("Login Successful");
         frmHome.show();
     }, function(err) {
         alert("Login Failed" + err);
     });
+}
+
+function launchBarcodeCapture() {
+    barcode.captureBarcode(barcodeCapCallback);
+}
+
+function barcodeCapCallback(barcodedata, androidScannedText) {
+    var platformName = kony.os.deviceInfo().name;
+    if (kony.string.startsWith(platformName, "iphone", true)) {
+        frmHome.txtServicetag.text = ("" + barcodedata.barcodestring).toUpperCase();
+    } else if (kony.string.startsWith(platformName, "android", true)) {
+        alert(androidScannedText.toUpperCase());
+    }
 }

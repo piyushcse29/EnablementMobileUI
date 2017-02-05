@@ -37,7 +37,7 @@
     "canUpdateUI": true,
     "children": [
         "imgBack",
-        "flxLogin"
+        "flxLogo"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -1,4 +1,3 @@
-//Type your code here
 function open(a) {
     function SCALE_ACTION____ad93a964dc3b43098ab216c7c1d84534_Callback() {}
     frmHome[a].isVisible = "true";
@@ -7,8 +6,8 @@ function open(a) {
             "stepConfig": {
                 "timingFunction": kony.anim.EASE
             },
-            "width": "100%",
-            "height": "100%"
+            "width": "80%",
+            "height": "20%"
         }
     }), {
         "delay": 0,

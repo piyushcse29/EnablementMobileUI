@@ -48,7 +48,7 @@
     "id": "flxsrch",
     "ide_onClick": "AS_FlexContainer_65dea0c939a348b685ca7229ddac24f6",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "da0eabd8f45e4bdfb5551efabf73c481",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

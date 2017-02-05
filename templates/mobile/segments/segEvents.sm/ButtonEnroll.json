@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "31%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0.50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se281685599841dfab03300446edff18",
+    "_text_": "ENROLL",
+    "_top_": {
+        "type": "string",
+        "value": "33.50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "22.50%"
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sb3ee9c871a445fc9e5d1bb6f67fb2b5",
+    "id": "ButtonEnroll",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d51afceda09741d0aecd2dac2f3b828a",
+    "name": "kony.ui.Button",
+    "parent": "flxBottom",
+    "pf": "segEvents",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -4,6 +4,10 @@
     "__parentReadjusting__": false,
     "_data_": [
         {
+            "ButtonEnroll": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ENROLL"
+            },
             "imgComment": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "comment.png"
@@ -14,7 +18,7 @@
             },
             "imgEvent": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "bck.PNG"
+                "src": "carousel1.png"
             },
             "imgLike": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
@@ -26,19 +30,35 @@
             },
             "lblDate": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "January 16, 2017"
+                "text": "Jan 17"
+            },
+            "lblDay": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22"
             },
             "lblDescription": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "The event is all about searching an item, the item could be anything of any size depending on the team size. The winner would be highest percentage."
             },
+            "lblEventID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
             "lblEventName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Scavenger Hunt"
             },
+            "lblLocation": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phoenix"
+            },
+            "lblLocationName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Location :"
+            },
             "lblMax": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Max Score"
+                "text": "Points"
             },
             "lblOngoing": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -52,9 +72,13 @@
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "k"
             },
-            "lblTest": {
+            "lblTime": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "10 AM - 10 PM"
+            },
+            "lblTimeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Time :"
             },
             "lblUpcoming": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -62,6 +86,10 @@
             }
         },
         {
+            "ButtonEnroll": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ENROLL"
+            },
             "imgComment": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "comment.png"
@@ -72,7 +100,7 @@
             },
             "imgEvent": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "bck.PNG"
+                "src": "carousel4.png"
             },
             "imgLike": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
@@ -84,19 +112,35 @@
             },
             "lblDate": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "January 16, 2017"
+                "text": "Jan 17"
+            },
+            "lblDay": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22"
             },
             "lblDescription": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "The event is all about searching an item, the item could be anything of any size depending on the team size. The winner would be highest percentage."
             },
+            "lblEventID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
             "lblEventName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Scavenger Hunt"
             },
+            "lblLocation": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phoenix"
+            },
+            "lblLocationName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Location :"
+            },
             "lblMax": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Max Score"
+                "text": "Points"
             },
             "lblOngoing": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -110,9 +154,13 @@
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "k"
             },
-            "lblTest": {
+            "lblTime": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "10 AM - 10 PM"
+            },
+            "lblTimeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Time :"
             },
             "lblUpcoming": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -120,6 +168,10 @@
             }
         },
         {
+            "ButtonEnroll": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "ENROLL"
+            },
             "imgComment": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "comment.png"
@@ -130,7 +182,7 @@
             },
             "imgEvent": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "bck.PNG"
+                "src": "carousel3.png"
             },
             "imgLike": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
@@ -142,19 +194,35 @@
             },
             "lblDate": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "January 16, 2017"
+                "text": "Jan17"
+            },
+            "lblDay": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22"
             },
             "lblDescription": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "The event is all about searching an item, the item could be anything of any size depending on the team size. The winner would be highest percentage."
             },
+            "lblEventID": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
             "lblEventName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Scavenger Hunt"
             },
+            "lblLocation": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Phoenix"
+            },
+            "lblLocationName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Location :"
+            },
             "lblMax": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Max Score"
+                "text": "Points"
             },
             "lblOngoing": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -168,9 +236,13 @@
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "k"
             },
-            "lblTest": {
+            "lblTime": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "10 AM - 10 PM"
+            },
+            "lblTimeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Time :"
             },
             "lblUpcoming": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -226,7 +298,7 @@
     },
     "iphone": {
         "psp": {
-            "indicator": "rowselect"
+            "indicator": "none"
         }
     },
     "isvisible": true,
@@ -264,7 +336,13 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
+        "ButtonEnroll": "ButtonEnroll",
+        "DateCont": "DateCont",
         "FlexContainer0a592a32577c646": "FlexContainer0a592a32577c646",
+        "LocationCont": "LocationCont",
+        "StatusCont": "StatusCont",
+        "TimeCont": "TimeCont",
+        "flxBottom": "flxBottom",
         "flxComment": "flxComment",
         "flxDesc": "flxDesc",
         "flxEnroll": "flxEnroll",
@@ -280,13 +358,18 @@
         "imgLike": "imgLike",
         "lblCompleted": "lblCompleted",
         "lblDate": "lblDate",
+        "lblDay": "lblDay",
         "lblDescription": "lblDescription",
+        "lblEventID": "lblEventID",
         "lblEventName": "lblEventName",
+        "lblLocation": "lblLocation",
+        "lblLocationName": "lblLocationName",
         "lblMax": "lblMax",
         "lblOngoing": "lblOngoing",
         "lblScore": "lblScore",
         "lblSeparator": "lblSeparator",
-        "lblTest": "lblTest",
+        "lblTime": "lblTime",
+        "lblTimeName": "lblTimeName",
         "lblUpcoming": "lblUpcoming"
     },
     "zindex": 1

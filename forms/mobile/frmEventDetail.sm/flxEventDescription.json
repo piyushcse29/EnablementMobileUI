@@ -2,8 +2,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "67.50%"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_skin_": "s567480f638549edac10c49013987fcf",
     "_top_": {
         "type": "string",
-        "value": "35%"
+        "value": "20.50%"
     },
     "_width_": {
         "type": "string",
@@ -39,7 +39,8 @@
     "canUpdateUI": true,
     "children": [
         "lblEventDescription",
-        "lblTiming"
+        "lblTiming",
+        "DescriptionCont"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -63,5 +64,5 @@
     "verticalscrollindicator": true,
     "wType": "FlexScrollContainer",
     "widgetalignment": 1,
-    "zindex": 1
+    "zindex": 5
 }

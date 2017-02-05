@@ -29,6 +29,12 @@
             "parentId": "",
             "callbackType": null,
             "enableMappingEditor": true
+        }, {
+            "id": "ADD_SNIPPET__9460a652bb034ff7828879c207aef804",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "eventDetail();",
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }

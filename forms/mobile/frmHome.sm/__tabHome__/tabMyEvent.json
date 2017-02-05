@@ -27,10 +27,12 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
+        "IdentityCont",
         "segMyEvents"
     ],
     "clipbounds": true,
     "containerweight": 93,
+    "defaultunit": 2,
     "enablescrolling": true,
     "id": "tabMyEvent",
     "info": null,
@@ -45,7 +47,7 @@
     "parent": "tabHome",
     "pf": "frmHome",
     "scrolldirection": 1,
-    "snapgridsize": 10,
+    "snapgridsize": "10",
     "snaptogrid": true,
     "tabname": "My Event",
     "tabpaneId": "tabHome",

@@ -3,11 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "15%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "0%"
+        "value": "19%"
     },
     "_margin_": [
         0,
@@ -25,8 +21,8 @@
     "_percent_": true,
     "_skin_": "s233df19964b49d2811d1570dbbec3a2",
     "_top_": {
-        "type": "string",
-        "value": "0%"
+        "type": "number",
+        "value": "0"
     },
     "_width_": {
         "type": "string",
@@ -35,9 +31,12 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "lblEventName",
-        "lblDate",
         "lblMax",
         "lblScore"
     ],
@@ -49,7 +48,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "66aa77005a444237b5bf5e1643669c12",
-    "layouttype": 2,
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMain",
     "pf": "segEvents",
