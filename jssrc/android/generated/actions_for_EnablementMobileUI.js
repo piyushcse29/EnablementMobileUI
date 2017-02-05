@@ -27,6 +27,10 @@ function AS_Button_961fcb8f12a7456abaa85b2a4035a5b1(eventobject) {
     close("flxComment");
 }
 
+function AS_Button_cdd402b9eaff4443b7b8b123201bd1d6(eventobject, context) {
+    return enroll.call(this);
+}
+
 function AS_Button_e5dafde352d246b4b49e45d0dd19d7b3(eventobject) {
     close("flxEnroll");
 }
@@ -80,7 +84,19 @@ function AS_FlexContainer_f66434714ddb4351a709e691622b0ed1(eventobject) {
     frmHome.show();
 }
 
+function AS_Form_55edb0dc1055436c9bf3fe12dba3fa35(eventobject) {
+    if (kony.store.getItem("email") !== null) {
+        frmHome.show();
+    } else {
+        login();
+    }
+}
+
 function AS_Form_bdc8eb1e017141c0bb152635da6a3591(eventobject) {}
+
+function AS_Form_dc6f528118b243ccb769b948ce9e2b2a(eventobject) {
+    kony.application.exit();
+}
 
 function AS_Segment_1df2f5cdad5e4ecfb29b0cd7c893ee95(eventobject, sectionNumber, rowNumber) {
     frmMyEventDetailed.show();
@@ -90,6 +106,10 @@ function AS_Segment_1df2f5cdad5e4ecfb29b0cd7c893ee95(eventobject, sectionNumber,
 function AS_Segment_d5fd7f01444645e7b56043acaa21d9f5(eventobject, sectionNumber, rowNumber) {
     frmEventDetail.show();
     eventDetail();
+}
+
+function AS_Tab_eb03912aca8e4555b895ded6685e1304(eventobject) {
+    return showeventsf.call(this);
 }
 
 function AS_Tab_efc43ca2af1f42019d7fa618661da560(eventobject, x, y) {}

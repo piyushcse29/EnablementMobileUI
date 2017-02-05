@@ -8,7 +8,7 @@
     "apppackagekey": "",
     "wap_android400_fontsize": "12",
     "nativeContainerProperties": {
-        "isModified": true,
+        "isModified": false,
         "isEnableJSContainer": false,
         "isEnableJSContainerAndroid": false,
         "isEnableJSContaineriOS": false
@@ -156,6 +156,7 @@
     "appidkey": "EnablementGo",
     "statusBarHidden": "false",
     "wap_bb360_fontsize": "12",
+    "export.type": "studioviz",
     "wap_spawindowstab_fontsize": "12",
     "isNewAppWithRespectToAndroidPackageName": "",
     "accountCloudGuid": "bf40ec29-5db3-428f-b185-f18548ccbea6",

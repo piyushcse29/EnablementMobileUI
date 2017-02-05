@@ -39,6 +39,7 @@
     "displaytext": true,
     "focusskin": "sb3ee9c871a445fc9e5d1bb6f67fb2b5",
     "id": "ButtonEnroll",
+    "ide_onClick": "AS_Button_cdd402b9eaff4443b7b8b123201bd1d6",
     "info": null,
     "isvisible": true,
     "kuid": "d51afceda09741d0aecd2dac2f3b828a",

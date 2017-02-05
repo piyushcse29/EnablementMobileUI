@@ -671,6 +671,7 @@ function addWidgetsfrmHome() {
         "id": "tabEvent",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
+        "onInit": AS_Tab_eb03912aca8e4555b895ded6685e1304,
         "orientation": constants.BOX_LAYOUT_VERTICAL,
         "skin": "CopyslTab0c346844174d043",
         "tabName": "Events",
@@ -811,7 +812,7 @@ function addWidgetsfrmHome() {
         "paddingInPixel": false
     }, {});
     tabEvent.add(segEvents);
-    tabHome.addTab("tabEvent", "Events", null, tabEvent, null);
+    tabHome.addTab("tabEvent", "Events", null, tabEvent, AS_Tab_eb03912aca8e4555b895ded6685e1304);
     flxHome.add(flxHeader, flxSearch, tabHome);
     var flxComment = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -942,6 +943,7 @@ function frmHomeGlobals() {
         "footerOverlap": false,
         "headerOverlap": false,
         "menuPosition": constants.FORM_MENU_POSITION_AFTER_APPMENU,
+        "onDeviceBack": AS_Form_dc6f528118b243ccb769b948ce9e2b2a,
         "retainScrollPosition": false,
         "titleBar": true,
         "titleBarSkin": "slTitleBar",

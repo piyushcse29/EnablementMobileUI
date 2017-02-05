@@ -1,0 +1,24 @@
+{
+    "AS_Form_dc6f528118b243ccb769b948ce9e2b2a": {
+        "id": "AS_Form_dc6f528118b243ccb769b948ce9e2b2a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0fa8fdfd25844c4082011f1911a46f02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__16de74776ec34e118dc72436b1c60a78",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.exit();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

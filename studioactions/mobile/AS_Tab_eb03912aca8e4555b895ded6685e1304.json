@@ -1,0 +1,27 @@
+{
+    "AS_Tab_eb03912aca8e4555b895ded6685e1304": {
+        "id": "AS_Tab_eb03912aca8e4555b895ded6685e1304",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0fa8fdfd25844c4082011f1911a46f02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___dce0ac7455ec4202bbde526658d9c4a3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "showeventsf",
+            "display": "showeventsf",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null
+        }]
+    }
+}

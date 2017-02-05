@@ -12,8 +12,8 @@ KMSPROP = {
 function initializeApp()
 {
   try {
-    var key="41d4b94bc7d0b07194152dc6b24267be";
-    var secret="7fe9ef21224bca50b3fc58541ce74b3b";
+    var key="6169c8047c0f328ffb432b748c97d5c";
+    var secret="fac34e524c43d51188c0cad1bc150216";
     var surl="https://100003520.auth.konycloud.com/appconfig";
     sdkClient=new kony.sdk();
     sdkClient.init(key,secret,surl,function(response){
