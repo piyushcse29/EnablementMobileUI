@@ -1,0 +1,24 @@
+{
+    "AS_Form_55edb0dc1055436c9bf3fe12dba3fa35": {
+        "id": "AS_Form_55edb0dc1055436c9bf3fe12dba3fa35",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d8f7bd9b038e4a71ac3b501721ef3f0a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__09659016320c4a59a68c1987938b1717",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.store.getItem(\"email\")!==null){\n  kony.print(\"email \"+kony.store.getItem(\"email\"));\n    frmHome.show();\n }\nelse{\n  frmLogin.show();\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

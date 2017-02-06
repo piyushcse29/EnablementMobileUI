@@ -34,6 +34,7 @@
     "containerweight": 93,
     "enablescrolling": true,
     "id": "tabEvent",
+    "ide_onInit": "AS_Tab_eb03912aca8e4555b895ded6685e1304",
     "info": null,
     "isvisible": true,
     "kuid": "c1151b29d35d4dc39162a4379edf6bfd",

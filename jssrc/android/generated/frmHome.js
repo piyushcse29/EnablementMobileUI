@@ -246,6 +246,7 @@ function addWidgetsfrmHome() {
         "height": "100%",
         "id": "BtnLogout",
         "isVisible": true,
+        "onClick": AS_Button_6d19984d331e46cf8d8e8a283e2f6445,
         "skin": "CopyslButtonGlossBlue0f280a71a262d4b",
         "width": "100%",
         "zIndex": 1
@@ -334,7 +335,7 @@ function addWidgetsfrmHome() {
     var tabHome = new kony.ui.TabPane({
         "activeSkin": "customNewActive",
         "activeTabs": [0],
-        "centerX": "50.09%",
+        "centerX": "50.12%",
         "centerY": "52.98%",
         "height": "94%",
         "id": "tabHome",
@@ -384,6 +385,7 @@ function addWidgetsfrmHome() {
         "id": "tabMyEvent",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
+        "onTouchStart": AS_Tab_efc43ca2af1f42019d7fa618661da560,
         "orientation": constants.BOX_LAYOUT_VERTICAL,
         "skin": "CopyslTab02ac065d26d144e",
         "tabName": "My Event",
@@ -669,6 +671,7 @@ function addWidgetsfrmHome() {
         "id": "tabEvent",
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
+        "onInit": AS_Tab_eb03912aca8e4555b895ded6685e1304,
         "orientation": constants.BOX_LAYOUT_VERTICAL,
         "skin": "CopyslTab0c346844174d043",
         "tabName": "Events",
@@ -809,7 +812,7 @@ function addWidgetsfrmHome() {
         "paddingInPixel": false
     }, {});
     tabEvent.add(segEvents);
-    tabHome.addTab("tabEvent", "Events", null, tabEvent, null);
+    tabHome.addTab("tabEvent", "Events", null, tabEvent, AS_Tab_eb03912aca8e4555b895ded6685e1304);
     flxHome.add(flxHeader, flxSearch, tabHome);
     var flxComment = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
@@ -940,6 +943,7 @@ function frmHomeGlobals() {
         "footerOverlap": false,
         "headerOverlap": false,
         "menuPosition": constants.FORM_MENU_POSITION_AFTER_APPMENU,
+        "onDeviceBack": AS_Form_dc6f528118b243ccb769b948ce9e2b2a,
         "retainScrollPosition": false,
         "titleBar": true,
         "titleBarSkin": "slTitleBar",

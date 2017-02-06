@@ -410,6 +410,7 @@ function initializesegEvents() {
         "id": "ButtonEnroll",
         "isVisible": true,
         "left": "0.50%",
+        "onClick": AS_Button_cdd402b9eaff4443b7b8b123201bd1d6,
         "skin": "CopyslButtonGlossBlue0bacd52f84f9a4c",
         "text": "ENROLL",
         "top": "33.50%",
